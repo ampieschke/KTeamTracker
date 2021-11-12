@@ -1,7 +1,18 @@
 import React, { Component } from "react";
 
 import { Container, Row, Col } from "react-bootstrap";
-import NormalMove from "../actions/normalMove/normalMove";
+import Charge from "../actions/charge";
+import Dash from "../actions/dash";
+import FallBack from "../actions/fallBack";
+import Fight from "../actions/fight";
+import Flying from "../actions/flying";
+import MissionActions from "../actions/missionActions";
+import NormalMove from "../actions/normalMove";
+import Overwatch from "../actions/overwatch";
+import Pass from "../actions/pass";
+import PickUp from "../actions/pickUp";
+import Shoot from "../actions/shoot";
+import UniqueActions from "../actions/uniqueActions";
 
 class FireFightPhase extends Component {
   constructor(props) {
@@ -18,10 +29,28 @@ class FireFightPhase extends Component {
     let actionArea;
     if (this.state.activeAction === "normalMove") {
       actionArea = <NormalMove />;
-      // } else if (this.state.activePhase === "strategyPhase") {
-      //   actionArea = <StrategyPhase />;
-      // } else if (this.state.activePhase === "firefightPhase") {
-      //   actionArea = <FireFightPhase />;
+    } else if (this.state.activeAction === "flying") {
+      actionArea = <Flying />;
+    } else if (this.state.activeAction === "charge") {
+      actionArea = <Charge />;
+    } else if (this.state.activeAction === "fallBack") {
+      actionArea = <FallBack />;
+    } else if (this.state.activeAction === "dash") {
+      actionArea = <Dash />;
+    } else if (this.state.activeAction === "pickUp") {
+      actionArea = <PickUp />;
+    } else if (this.state.activeAction === "shoot") {
+      actionArea = <Shoot />;
+    } else if (this.state.activeAction === "fight") {
+      actionArea = <Fight />;
+    } else if (this.state.activeAction === "overwatch") {
+      actionArea = <Overwatch />;
+    } else if (this.state.activeAction === "pass") {
+      actionArea = <Pass />;
+    } else if (this.state.activeAction === "uniqueActions") {
+      actionArea = <UniqueActions />;
+    } else if (this.state.activeAction === "missionActions") {
+      actionArea = <MissionActions />;
     }
 
     return (
@@ -57,7 +86,7 @@ class FireFightPhase extends Component {
           <div className="phaseStep">
             <h3>Actions</h3>
             <Row>
-              <Col lg="2" className="leftBox">
+              <Col lg="3" className="leftBox">
                 <button
                   onClick={this.actionUpdate}
                   className="actionBtn"
@@ -155,7 +184,7 @@ class FireFightPhase extends Component {
                   12. Mission Actions
                 </button>
               </Col>
-              <Col lg="10" className="rightBox">
+              <Col lg="9" className="rightBox">
                 {actionArea}
               </Col>
             </Row>
