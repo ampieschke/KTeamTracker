@@ -27,15 +27,21 @@ class TurnCounter extends Component {
         <Container className="counter">
           <Col>
             <h2 id="turn"> Turn: </h2>
-            <Row>
-              <Col lg="2" className="counterBtn">
-                <button onClick={() => this.backTurn()}>-</button>
-              </Col>
-              <Col>
+            <Row className="counterBits">
+              <Col className="">
                 <h2 id="turnCounter"> {turn} </h2>
               </Col>
-              <Col lg="2" className="counterBtn">
-                <button onClick={() => this.addTurn()}>+</button>
+            </Row>
+            <Row>
+              <Col className="Btn col-6">
+                <button className="button-53" onClick={() => this.backTurn()}>
+                  -
+                </button>
+              </Col>
+              <Col className="Btn col-6">
+                <button className="button-53" onClick={() => this.addTurn()}>
+                  +
+                </button>
               </Col>
             </Row>
           </Col>

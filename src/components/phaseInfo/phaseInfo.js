@@ -41,19 +41,21 @@ class PhaseInfo extends Component {
           <Row>
             <Col lg="2" className="leftBox">
               <TurnCounter />
-              <button
-                onClick={this.phaseUpdate}
-                className="phaseBtn"
-                value="setUp"
-                id="setUp"
-              >
-                Setting Up
-              </button>
+              <div className="btnSection">
+                <button
+                  onClick={this.phaseUpdate}
+                  className="phaseBtn button-53"
+                  value="setUp"
+                  id="setUp"
+                >
+                  Setting Up
+                </button>
+              </div>
               <div className="btnSection">
                 <h3>Round Flow</h3>
                 <button
                   onClick={this.phaseUpdate}
-                  className="phaseBtn"
+                  className="phaseBtn button-53"
                   value="initiativePhase"
                   id="initPhase"
                 >
@@ -61,7 +63,7 @@ class PhaseInfo extends Component {
                 </button>
                 <button
                   onClick={this.phaseUpdate}
-                  className="phaseBtn"
+                  className="phaseBtn button-53"
                   value="strategyPhase"
                   id="strategyPhase"
                 >
@@ -69,7 +71,7 @@ class PhaseInfo extends Component {
                 </button>
                 <button
                   onClick={this.phaseUpdate}
-                  className="phaseBtn"
+                  className="phaseBtn button-53"
                   value="firefightPhase"
                   id="firefightPhase"
                 >
@@ -80,7 +82,7 @@ class PhaseInfo extends Component {
                 <h3>Other Stuff</h3>
                 <button
                   onClick={this.phaseUpdate}
-                  className="phaseBtn"
+                  className="phaseBtn button-53"
                   value="objectives"
                   id="objectives"
                 >
@@ -88,7 +90,7 @@ class PhaseInfo extends Component {
                 </button>
                 <button
                   onClick={this.phaseUpdate}
-                  className="phaseBtn"
+                  className="phaseBtn button-53"
                   value="los"
                   id="los"
                 >

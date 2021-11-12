@@ -89,7 +89,7 @@ class FireFightPhase extends Component {
               <Col lg="3" className="leftBox">
                 <button
                   onClick={this.actionUpdate}
-                  className="actionBtn"
+                  className="button-54 actionBtn "
                   value="normalMove"
                   id="normalMove"
                 >
@@ -97,7 +97,7 @@ class FireFightPhase extends Component {
                 </button>
                 <button
                   onClick={this.actionUpdate}
-                  className="actionBtn"
+                  className="actionBtn button-54"
                   value="flying"
                   id="flying"
                 >
@@ -105,7 +105,7 @@ class FireFightPhase extends Component {
                 </button>
                 <button
                   onClick={this.actionUpdate}
-                  className="actionBtn"
+                  className="actionBtn button-54"
                   value="charge"
                   id="charge"
                 >
@@ -113,7 +113,7 @@ class FireFightPhase extends Component {
                 </button>
                 <button
                   onClick={this.actionUpdate}
-                  className="actionBtn"
+                  className="actionBtn button-54"
                   value="fallBack"
                   id="fallBack"
                 >
@@ -121,7 +121,7 @@ class FireFightPhase extends Component {
                 </button>
                 <button
                   onClick={this.actionUpdate}
-                  className="actionBtn"
+                  className="actionBtn button-54"
                   value="dash"
                   id="dash"
                 >
@@ -129,7 +129,7 @@ class FireFightPhase extends Component {
                 </button>
                 <button
                   onClick={this.actionUpdate}
-                  className="actionBtn"
+                  className="actionBtn button-54"
                   value="pickUp"
                   id="pickUp"
                 >
@@ -137,7 +137,7 @@ class FireFightPhase extends Component {
                 </button>
                 <button
                   onClick={this.actionUpdate}
-                  className="actionBtn"
+                  className="actionBtn button-54"
                   value="shoot"
                   id="shoot"
                 >
@@ -145,7 +145,7 @@ class FireFightPhase extends Component {
                 </button>
                 <button
                   onClick={this.actionUpdate}
-                  className="actionBtn"
+                  className="actionBtn button-54"
                   value="fight"
                   id="fight"
                 >
@@ -153,7 +153,7 @@ class FireFightPhase extends Component {
                 </button>
                 <button
                   onClick={this.actionUpdate}
-                  className="actionBtn"
+                  className="actionBtn button-54"
                   value="overwatch"
                   id="overwatch"
                 >
@@ -161,7 +161,7 @@ class FireFightPhase extends Component {
                 </button>
                 <button
                   onClick={this.actionUpdate}
-                  className="actionBtn"
+                  className="actionBtn button-54"
                   value="pass"
                   id="pass"
                 >
@@ -169,7 +169,7 @@ class FireFightPhase extends Component {
                 </button>
                 <button
                   onClick={this.actionUpdate}
-                  className="actionBtn"
+                  className="actionBtn button-54"
                   value="uniqueActions"
                   id="uniqueActions"
                 >
@@ -177,7 +177,7 @@ class FireFightPhase extends Component {
                 </button>
                 <button
                   onClick={this.actionUpdate}
-                  className="actionBtn"
+                  className="actionBtn button-54"
                   value="missionActions"
                   id="missionActions"
                 >
