@@ -5,9 +5,10 @@ import { Container, Col, Row } from "react-bootstrap";
 class Scoreboard extends Component {
   constructor(props) {
     super(props);
-    this.state = { teamOne: 0, teamTwo: 0 };
+    this.state = { teamOne: 0, teamTwo: 0, cpOne: 2, cpTwo: 2 };
   }
 
+  //Scoring//
   upTeamOne = () => {
     this.setState({
       teamOne: this.state.teamOne + 1,
@@ -32,12 +33,41 @@ class Scoreboard extends Component {
     });
   };
 
+  //CP Count//
+  upcpOne = () => {
+    this.setState({
+      cpOne: this.state.cpOne + 1,
+    });
+  };
+
+  downcpOne = () => {
+    this.setState({
+      cpOne: this.state.cpOne - 1,
+    });
+  };
+
+  upcpTwo = () => {
+    this.setState({
+      cpTwo: this.state.cpTwo + 1,
+    });
+  };
+
+  downcpTwo = () => {
+    this.setState({
+      cpTwo: this.state.cpTwo - 1,
+    });
+  };
+
   render() {
     let { teamOne } = this.state;
     let { teamTwo } = this.state;
+    let { cpOne } = this.state;
+    let { cpTwo } = this.state;
+
     return (
       <>
         <Container className="scoreBoard">
+          {/* Scoring */}
           <Row>
             <Col lg="6" className="scoreBoard">
               <h2> Team One </h2>
@@ -71,6 +101,44 @@ class Scoreboard extends Component {
                 </Col>
                 <Col className="col-4">
                   <button className="btn" onClick={() => this.upTeamTwo()}>
+                    +
+                  </button>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+          {/* CP Counter */}
+          <Row>
+            <Col lg="6" className="scoreBoard">
+              <Row className="secondPart">
+                <Col className="col-4">
+                  <button className="btn" onClick={() => this.downcpOne()}>
+                    -
+                  </button>
+                </Col>
+                <Col className="col-4">
+                  <span className="score">{cpOne} CP</span>
+                </Col>
+                <Col className="col-4">
+                  <button className="btn" onClick={() => this.upcpOne()}>
+                    +
+                  </button>
+                </Col>
+              </Row>
+            </Col>
+
+            <Col lg="6" className="scoreBoard">
+              <Row>
+                <Col className="col-4">
+                  <button className="btn" onClick={() => this.downcpTwo()}>
+                    -
+                  </button>
+                </Col>
+                <Col className="col-4">
+                  <span className="score">{cpTwo} CP</span>
+                </Col>
+                <Col className="col-4">
+                  <button className="btn" onClick={() => this.upcpTwo()}>
                     +
                   </button>
                 </Col>
