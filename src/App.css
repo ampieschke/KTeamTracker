@@ -1,10 +1,6 @@
 
 .leftBox{
-  border: solid red 1px;
-}
-
-.rightBox{
-  border: solid red 1px;
+  border-right: solid red 1px;
 }
 
 .phaseBtn{

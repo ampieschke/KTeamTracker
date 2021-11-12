@@ -1,12 +1,9 @@
 .scoreBoard{
     text-align: center;
     align-content: center;
-    border: red solid 1px;
+    border-bottom: red solid 1px;
+    border-top: red solid 1px;
 
-}
-
-.secondPart{
-    align-content: center;
 }
 
 .score{
@@ -14,10 +11,10 @@
     font-weight: 800;
 }
 
-.add{
-    margin-top: 30%;
+.secondPart{
+    text-align: center;
 }
 
-.subtract{
-    margin-top: 30%; 
+.btn:hover{
+    background-color: red;
 }

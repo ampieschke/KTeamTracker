@@ -41,20 +41,17 @@ class Scoreboard extends Component {
           <Row>
             <Col lg="6" className="scoreBoard">
               <h2> Team One </h2>
-              <Row className="justify-content-md-center">
-                <Col lg="1" className="">
-                  <button
-                    className="subtract"
-                    onClick={() => this.downTeamOne()}
-                  >
+              <Row className="secondPart">
+                <Col className="col-4">
+                  <button className="btn" onClick={() => this.downTeamOne()}>
                     -
                   </button>
                 </Col>
-                <Col lg="1">
+                <Col className="col-4">
                   <span className="score">{teamOne}</span>
                 </Col>
-                <Col lg="1" className="">
-                  <button className="add" onClick={() => this.upTeamOne()}>
+                <Col className="col-4">
+                  <button className="btn" onClick={() => this.upTeamOne()}>
                     +
                   </button>
                 </Col>
@@ -63,20 +60,17 @@ class Scoreboard extends Component {
 
             <Col lg="6" className="scoreBoard">
               <h2> Team Two </h2>
-              <Row className="justify-content-md-center">
-                <Col lg="1" className="">
-                  <button
-                    className="subtract"
-                    onClick={() => this.downTeamTwo()}
-                  >
+              <Row>
+                <Col className="col-4">
+                  <button className="btn" onClick={() => this.downTeamTwo()}>
                     -
                   </button>
                 </Col>
-                <Col lg="1">
+                <Col className="col-4">
                   <span className="score">{teamTwo}</span>
                 </Col>
-                <Col lg="1" className="">
-                  <button className="add" onClick={() => this.upTeamTwo()}>
+                <Col className="col-4">
+                  <button className="btn" onClick={() => this.upTeamTwo()}>
                     +
                   </button>
                 </Col>

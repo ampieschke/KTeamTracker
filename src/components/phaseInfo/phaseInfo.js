@@ -1,9 +1,13 @@
 import React, { Component } from "react";
+import "./style.css";
 import InitiativePhase from "../initiativePhase/InitiativePhase";
 import { Col, Row, Container } from "react-bootstrap";
 import StrategyPhase from "../strategyPhase/StrategyPhase";
 import FireFightPhase from "../fireFightPhase/FireFightPhase";
 import TurnCounter from "../turnCounter/turnCounter";
+import SetUp from "../setUp/setUp";
+import ControllingObjectives from "../otherStuff/controllingObjectives";
+import LineOfSight from "../otherStuff/lineOfSight";
 
 class PhaseInfo extends Component {
   constructor(props) {
@@ -24,9 +28,15 @@ class PhaseInfo extends Component {
       display = <StrategyPhase />;
     } else if (this.state.activePhase === "firefightPhase") {
       display = <FireFightPhase />;
+    } else if (this.state.activePhase === "setUp") {
+      display = <SetUp />;
+    } else if (this.state.activePhase === "objectives") {
+      display = <ControllingObjectives />;
+    } else if (this.state.activePhase === "los") {
+      display = <LineOfSight />;
     }
     return (
-      <div className="App">
+      <div className="phaseOrder">
         <Container>
           <Row>
             <Col lg="2" className="leftBox">
@@ -34,27 +44,57 @@ class PhaseInfo extends Component {
               <button
                 onClick={this.phaseUpdate}
                 className="phaseBtn"
-                value="initiativePhase"
-                id="initPhase"
+                value="setUp"
+                id="setUp"
               >
-                1. Initiative Phase
+                Setting Up
               </button>
-              <button
-                onClick={this.phaseUpdate}
-                className="phaseBtn"
-                value="strategyPhase"
-                id="strategyPhase"
-              >
-                2. Strategy Phase
-              </button>
-              <button
-                onClick={this.phaseUpdate}
-                className="phaseBtn"
-                value="firefightPhase"
-                id="firefightPhase"
-              >
-                3. Firefight Phase
-              </button>
+              <div className="btnSection">
+                <h3>Round Flow</h3>
+                <button
+                  onClick={this.phaseUpdate}
+                  className="phaseBtn"
+                  value="initiativePhase"
+                  id="initPhase"
+                >
+                  1. Initiative Phase
+                </button>
+                <button
+                  onClick={this.phaseUpdate}
+                  className="phaseBtn"
+                  value="strategyPhase"
+                  id="strategyPhase"
+                >
+                  2. Strategy Phase
+                </button>
+                <button
+                  onClick={this.phaseUpdate}
+                  className="phaseBtn"
+                  value="firefightPhase"
+                  id="firefightPhase"
+                >
+                  3. Firefight Phase
+                </button>
+              </div>
+              <div className="btnSection">
+                <h3>Other Stuff</h3>
+                <button
+                  onClick={this.phaseUpdate}
+                  className="phaseBtn"
+                  value="objectives"
+                  id="objectives"
+                >
+                  Controlling Objectives
+                </button>
+                <button
+                  onClick={this.phaseUpdate}
+                  className="phaseBtn"
+                  value="los"
+                  id="los"
+                >
+                  Line of Sight
+                </button>
+              </div>
             </Col>
             <Col lg="10" className="rightBox">
               {display}
