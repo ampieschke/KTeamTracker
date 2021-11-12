@@ -1,0 +1,23 @@
+.scoreBoard{
+    text-align: center;
+    align-content: center;
+    border: red solid 1px;
+
+}
+
+.secondPart{
+    align-content: center;
+}
+
+.score{
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.add{
+    margin-top: 30%;
+}
+
+.subtract{
+    margin-top: 30%; 
+}

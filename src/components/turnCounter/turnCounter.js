@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
-import { Container } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 
 class TurnCounter extends Component {
   constructor(props) {
@@ -25,9 +25,20 @@ class TurnCounter extends Component {
     return (
       <>
         <Container className="counter">
-          <button onClick={() => this.backTurn()}>-</button>
-          <span id="turnCounter"> {turn} </span>
-          <button onClick={() => this.addTurn()}>+</button>
+          <Col>
+            <h2 id="turn"> Turn: </h2>
+            <Row>
+              <Col lg="2" className="counterBtn">
+                <button onClick={() => this.backTurn()}>-</button>
+              </Col>
+              <Col>
+                <h2 id="turnCounter"> {turn} </h2>
+              </Col>
+              <Col lg="2" className="counterBtn">
+                <button onClick={() => this.addTurn()}>+</button>
+              </Col>
+            </Row>
+          </Col>
         </Container>
       </>
     );

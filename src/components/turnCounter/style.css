@@ -1,3 +1,19 @@
 .counter{
     text-align: center;
+
+}
+
+#turn{
+    font-weight: 500;
+    font-size: 80px;
+}
+
+#turnCounter{
+    font-weight: 900;
+    font-size: 100px;
+}
+
+.counterBtn{
+    width:100%;
+    padding-top: 30%;
 }
