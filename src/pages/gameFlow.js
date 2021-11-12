@@ -1,4 +1,4 @@
-import { useAuth0 } from "@auth0/auth0-react";
+import { useAuth0, withAuthenticationRequired } from "@auth0/auth0-react";
 import React from "react";
 import Scoreboard from "../components/scoreboard/scoreboard";
 import PhaseInfo from "../components/phaseInfo/phaseInfo";
@@ -16,4 +16,4 @@ function GameFlow() {
   );
 }
 
-export default GameFlow;
+export default withAuthenticationRequired(GameFlow);
