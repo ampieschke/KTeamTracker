@@ -1,11 +1,12 @@
 .counter{
     text-align: center;
-
+    Font-Family: 'Roboto Condensed', Sans-Serif;
 }
 
 #turn{
     font-weight: 500;
     font-size: 80px;
+    Font-Family: 'Roboto Condensed', Sans-Serif;
 }
 
 #turnCounter{
