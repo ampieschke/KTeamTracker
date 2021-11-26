@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 
 import { Container, Row, Col } from "react-bootstrap";
+import BondingKnife from "../tauArms/bondingKnife";
+import PulseCarbineSU from "../tauArms/pulseCarbineSU";
+import ArtofWar from "../tauSpecialRules/artOfWar";
+import HolographicReadout from "../tauSpecialRules/holographicReadout";
+import MarkerLight from "../tauSpecialRules/markerLight";
 
 class ShasUi extends Component {
   render() {
@@ -23,6 +28,16 @@ class ShasUi extends Component {
             </Row>
           </Col>
         </Row>
+        <Row className="armory">
+          <PulseCarbineSU />
+          <BondingKnife />
+        </Row>
+        <Row className="abilities">
+          <ArtofWar />
+          <HolographicReadout />
+          <MarkerLight />
+        </Row>
+        <Row className="uniqueActions"></Row>
       </Container>
     );
   }

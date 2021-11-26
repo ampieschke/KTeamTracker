@@ -1,8 +1,12 @@
 import React, { Component } from "react";
-
+import "./style.css";
 import { Container, Row, Col } from "react-bootstrap";
 
-import ShasUi from "../tau/tau/shasUi";
+import ShasUi from "../tau/tauRoster/shasUi";
+import ShasLa from "../tau/tauRoster/shasLa";
+import BloodedPathfinder from "../tau/tauRoster/bloodedPF";
+import DroneControlPathfinder from "../tau/tauRoster/droneControlPF";
+import AssaultGrenadierPF from "../tau/tauRoster/assaultGrenadierPF";
 
 class Tau extends Component {
   constructor(props) {
@@ -19,6 +23,14 @@ class Tau extends Component {
     let rosterArea;
     if (this.state.activeOperative === "shasUi") {
       rosterArea = <ShasUi />;
+    } else if (this.state.activeOperative === "shasLa") {
+      rosterArea = <ShasLa />;
+    } else if (this.state.activeOperative === "bloodedPF") {
+      rosterArea = <BloodedPathfinder />;
+    } else if (this.state.activeOperative === "droneControlPF") {
+      rosterArea = <DroneControlPathfinder />;
+    } else if (this.state.activeOperative === "assaultGrenadierPF") {
+      rosterArea = <AssaultGrenadierPF />;
     }
 
     return (
@@ -35,6 +47,38 @@ class Tau extends Component {
                 id="shasUi"
               >
                 Shas'ui Pathfinder
+              </button>
+              <button
+                onClick={this.rosterUpdate}
+                className="button-54 operativeBtn"
+                value="shasLa"
+                id="shasLa"
+              >
+                Shas'la Pathfinder
+              </button>
+              <button
+                onClick={this.rosterUpdate}
+                className="button-54 operativeBtn"
+                value="bloodedPF"
+                id="bloodedPF"
+              >
+                Blooded Pathfinder
+              </button>
+              <button
+                onClick={this.rosterUpdate}
+                className="button-54 operativeBtn"
+                value="droneControlPF"
+                id="droneControlPF"
+              >
+                Drone Control Pathfinder
+              </button>
+              <button
+                onClick={this.rosterUpdate}
+                className="button-54 operativeBtn"
+                value="assaultGrenadierPF"
+                id="assaultGrenadierPF"
+              >
+                Assault Grenadier Pathfinder
               </button>
             </Col>
             <Col lg="9" className="rightBox">

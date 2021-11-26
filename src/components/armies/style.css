@@ -1,0 +1,16 @@
+.armory{
+    margin-top: 20px;
+    border-top: grey 1px solid;
+}
+
+.weapon{
+    border-top: grey 1px dashed;
+}
+
+.ability{
+    border-top: grey 1px dashed;
+}
+
+#specialRule{
+    color: blue;
+}
