@@ -17,7 +17,7 @@ class StormBolter extends Component {
 
   render() {
     let srArea;
-    if (this.state.activeSR === "balanced") {
+    if (this.state.activeSR === "relentless") {
       srArea = <Relentless />;
     }
 

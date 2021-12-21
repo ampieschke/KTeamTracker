@@ -90,7 +90,7 @@ class PhaseInfo extends Component {
                   value="specialRules"
                   id="specialRules"
                 >
-                  Special rules
+                  Special Rules
                 </button>
                 <button
                   onClick={this.phaseUpdate}
