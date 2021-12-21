@@ -57,7 +57,7 @@ class GreyKnights extends Component {
                 Grey Knight Gunner
               </button>
             </Col>
-            <Col lg="9" className="rightBox">
+            <Col xs="9" className="rightBox">
               {rosterArea}
             </Col>
           </Row>

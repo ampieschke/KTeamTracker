@@ -127,12 +127,11 @@ Font-Size: 16px;
   left: 2px;
 }
 
-@media (min-width: 768px) {
-  .button-54 {
-    padding: .75rem 3rem;
-    font-size: 1.25rem;
-  }
+.weapon{
+  font-size: 3vw;
 }
+
+
 
 .tauButton{
   background-color: purple;
@@ -141,4 +140,16 @@ Font-Size: 16px;
 
 .gKButton{
   background-color: silver;
+}
+
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+  .weapon{
+    font-size: 1.25rem;
+  }
+
 }
