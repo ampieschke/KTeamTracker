@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import "./style.css";
 import { Container, Col, Row, Button } from "react-bootstrap";
-import Tau from "../armies/tau";
-import GreyKnights from "../armies/greyKnights";
+// import Tau from "../armies/tau";
+// import GreyKnights from "../armies/greyKnights";
+import GreyKnightSelector from "../greyKnights/greyKnightsSelector";
+import TauSelector from "../tau/tauSelector";
 
 class ArmyList extends Component {
   constructor(props) {
@@ -30,9 +32,9 @@ class ArmyList extends Component {
     console.log(this.state.activeTeam);
     let army;
     if (this.state.activeTeam === "tau") {
-      army = <Tau />;
+      army = <TauSelector />;
     } else if (this.state.activeTeam === "greyKnights") {
-      army = <GreyKnights />;
+      army = <GreyKnightSelector />;
     } else if (this.state.activeTeam === "none") {
       army = "";
     }
@@ -40,10 +42,10 @@ class ArmyList extends Component {
       <div>
         <Container>
           <Row>
-            <Col lg="6">
+            <Col lg="3">
               <div>
                 <button
-                  className="btn"
+                  className="button-54 tauButton"
                   onClick={this.teamUpdate}
                   value="tau"
                   id="tau"
@@ -52,10 +54,10 @@ class ArmyList extends Component {
                 </button>
               </div>
             </Col>
-            <Col lg="6">
+            <Col lg="3">
               <div>
                 <button
-                  className="btn"
+                  className="button-54 gKButton"
                   onClick={this.teamUpdate}
                   value="greyKnights"
                   id="greyKnights"

@@ -133,3 +133,12 @@ Font-Size: 16px;
     font-size: 1.25rem;
   }
 }
+
+.tauButton{
+  background-color: purple;
+  color: white;
+}
+
+.gKButton{
+  background-color: silver;
+}

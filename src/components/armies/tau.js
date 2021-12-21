@@ -57,7 +57,7 @@ class Tau extends Component {
             <Col xs="3" className="leftBox">
               <button
                 onClick={this.rosterUpdate}
-                className="button-54 operativeBtn"
+                className="button-54 tauButton"
                 value="shasUi"
                 id="shasUi"
               >
@@ -65,7 +65,7 @@ class Tau extends Component {
               </button>
               <button
                 onClick={this.rosterUpdate}
-                className="button-54 operativeBtn"
+                className="button-54 tauButton"
                 value="shasLa"
                 id="shasLa"
               >
@@ -73,7 +73,7 @@ class Tau extends Component {
               </button>
               <button
                 onClick={this.rosterUpdate}
-                className="button-54 operativeBtn"
+                className="button-54 tauButton"
                 value="bloodedPF"
                 id="bloodedPF"
               >
@@ -81,7 +81,7 @@ class Tau extends Component {
               </button>
               <button
                 onClick={this.rosterUpdate}
-                className="button-54 operativeBtn"
+                className="button-54 tauButton"
                 value="droneControlPF"
                 id="droneControlPF"
               >
@@ -89,7 +89,7 @@ class Tau extends Component {
               </button>
               <button
                 onClick={this.rosterUpdate}
-                className="button-54 operativeBtn"
+                className="button-54 tauButton"
                 value="assaultGrenadierPF"
                 id="assaultGrenadierPF"
               >
@@ -97,7 +97,7 @@ class Tau extends Component {
               </button>
               <button
                 onClick={this.rosterUpdate}
-                className="button-54 operativeBtn"
+                className="button-54 tauButton"
                 value="transpectralPF"
                 id="transpectralPF"
               >
@@ -105,7 +105,7 @@ class Tau extends Component {
               </button>
               <button
                 onClick={this.rosterUpdate}
-                className="button-54 operativeBtn"
+                className="button-54 tauButton"
                 value="commsPF"
                 id="commsPF"
               >
@@ -113,7 +113,7 @@ class Tau extends Component {
               </button>
               <button
                 onClick={this.rosterUpdate}
-                className="button-54 operativeBtn"
+                className="button-54 tauButton"
                 value="medTechPF"
                 id="medTechPF"
               >
@@ -121,7 +121,7 @@ class Tau extends Component {
               </button>
               <button
                 onClick={this.rosterUpdate}
-                className="button-54 operativeBtn"
+                className="button-54 tauButton"
                 value="weapExpertPF"
                 id="weapExpertPF"
               >
@@ -129,7 +129,7 @@ class Tau extends Component {
               </button>
               <button
                 onClick={this.rosterUpdate}
-                className="button-54 operativeBtn"
+                className="button-54 tauButton"
                 value="mmPF"
                 id="mmPF"
               >

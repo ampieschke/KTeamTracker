@@ -3,12 +3,14 @@
     align-content: center;
     border-bottom: red solid 1px;
     border-top: red solid 1px;
+    margin-bottom: 15px;
 
 }
 
 .score{
     font-size: 30px;
     font-weight: 800;
+    
 }
 
 .secondPart{

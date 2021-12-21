@@ -69,7 +69,7 @@ class Scoreboard extends Component {
         <Container className="scoreBoard">
           {/* Scoring */}
           <Row>
-            <Col lg="6" className="scoreBoard">
+            <Col lg="6">
               <h2> Team One </h2>
               <Row className="secondPart">
                 <Col className="col-4">
@@ -88,7 +88,7 @@ class Scoreboard extends Component {
               </Row>
             </Col>
 
-            <Col lg="6" className="scoreBoard">
+            <Col lg="6">
               <h2> Team Two </h2>
               <Row>
                 <Col className="col-4">
@@ -109,7 +109,7 @@ class Scoreboard extends Component {
           </Row>
           {/* CP Counter */}
           <Row>
-            <Col lg="6" className="scoreBoard">
+            <Col lg="6">
               <Row className="secondPart">
                 <Col className="col-4">
                   <button className="btn" onClick={() => this.downcpOne()}>
@@ -127,7 +127,7 @@ class Scoreboard extends Component {
               </Row>
             </Col>
 
-            <Col lg="6" className="scoreBoard">
+            <Col lg="6">
               <Row>
                 <Col className="col-4">
                   <button className="btn" onClick={() => this.downcpTwo()}>

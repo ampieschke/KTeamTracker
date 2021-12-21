@@ -5,7 +5,7 @@ import GreyKnightWar from "../greyKnights/greyKnightRoster/greyKnightWarrior";
 import GreyKnightGunner from "../greyKnights/greyKnightRoster/greyKnightGunner";
 import GreyKnightJusticar from "../greyKnights/greyKnightRoster/greyKnightJusticar";
 
-class GreyKnights extends Component {
+class GreyKnightStratPloys extends Component {
   constructor(props) {
     super(props);
     this.state = { activeOperative: "" };
@@ -28,13 +28,14 @@ class GreyKnights extends Component {
 
     return (
       <Container>
+        <h1>Grey Knights</h1>
         <div>
           <h3>Roster</h3>
           <Row>
             <Col xs="3" className="leftBox">
               <button
                 onClick={this.rosterUpdate}
-                className="button-54 gKButton"
+                className="button-54 operativeBtn"
                 value="greyKnightJusticar"
                 id="greyKnightJusticar"
               >
@@ -42,7 +43,7 @@ class GreyKnights extends Component {
               </button>
               <button
                 onClick={this.rosterUpdate}
-                className="button-54 gKButton"
+                className="button-54 operativeBtn"
                 value="greyKnightWar"
                 id="greyKnightWar"
               >
@@ -50,7 +51,7 @@ class GreyKnights extends Component {
               </button>
               <button
                 onClick={this.rosterUpdate}
-                className="button-54 gKButton"
+                className="button-54 operativeBtn"
                 value="greyKnightGunner"
                 id="greyKnightGunner"
               >
@@ -67,4 +68,4 @@ class GreyKnights extends Component {
   }
 }
 
-export default GreyKnights;
+export default GreyKnightStratPloys;
