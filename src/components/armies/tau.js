@@ -7,6 +7,11 @@ import ShasLa from "../tau/tauRoster/shasLa";
 import BloodedPathfinder from "../tau/tauRoster/bloodedPF";
 import DroneControlPathfinder from "../tau/tauRoster/droneControlPF";
 import AssaultGrenadierPF from "../tau/tauRoster/assaultGrenadierPF";
+import TranspectralPathfinder from "../tau/tauRoster/transpectralPathfinder";
+import CommsSpecialist from "../tau/tauRoster/communicationsSpecialist";
+import MedicalTechPF from "../tau/tauRoster/medicalTechPF";
+import WeaponsExpertPF from "../tau/tauRoster/weaponsExpertPF";
+import MarksmanPF from "../tau/tauRoster/marksmanPF";
 
 class Tau extends Component {
   constructor(props) {
@@ -31,6 +36,16 @@ class Tau extends Component {
       rosterArea = <DroneControlPathfinder />;
     } else if (this.state.activeOperative === "assaultGrenadierPF") {
       rosterArea = <AssaultGrenadierPF />;
+    } else if (this.state.activeOperative === "transpectralPF") {
+      rosterArea = <TranspectralPathfinder />;
+    } else if (this.state.activeOperative === "commsPF") {
+      rosterArea = <CommsSpecialist />;
+    } else if (this.state.activeOperative === "medTechPF") {
+      rosterArea = <MedicalTechPF />;
+    } else if (this.state.activeOperative === "weapExpertPF") {
+      rosterArea = <WeaponsExpertPF />;
+    } else if (this.state.activeOperative === "mmPF") {
+      rosterArea = <MarksmanPF />;
     }
 
     return (
@@ -79,6 +94,46 @@ class Tau extends Component {
                 id="assaultGrenadierPF"
               >
                 Assault Grenadier Pathfinder
+              </button>
+              <button
+                onClick={this.rosterUpdate}
+                className="button-54 operativeBtn"
+                value="transpectralPF"
+                id="transpectralPF"
+              >
+                Transpectral Interference Pathfinder
+              </button>
+              <button
+                onClick={this.rosterUpdate}
+                className="button-54 operativeBtn"
+                value="commsPF"
+                id="commsPF"
+              >
+                Communications Specialist Pathfinder
+              </button>
+              <button
+                onClick={this.rosterUpdate}
+                className="button-54 operativeBtn"
+                value="medTechPF"
+                id="medTechPF"
+              >
+                Medical Technician Pathfinder
+              </button>
+              <button
+                onClick={this.rosterUpdate}
+                className="button-54 operativeBtn"
+                value="weapExpertPF"
+                id="weapExpertPF"
+              >
+                Weapons Expert Pathfinder
+              </button>
+              <button
+                onClick={this.rosterUpdate}
+                className="button-54 operativeBtn"
+                value="mmPF"
+                id="mmPF"
+              >
+                Marksman Pathfinder
               </button>
             </Col>
             <Col lg="9" className="rightBox">

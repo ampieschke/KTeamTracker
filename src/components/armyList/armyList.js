@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Col, Row, Button } from "react-bootstrap";
 import Tau from "../armies/tau";
 import GreyKnights from "../armies/greyKnights";
 
@@ -66,15 +66,19 @@ class ArmyList extends Component {
             </Col>
           </Row>
           <Row id="armyArea">{army}</Row>
-          <button
+        </Container>
+        <div className="d-grip gap-2">
+          <Button
+            variant="secondary"
+            size="lg"
             id="closeBtn"
             className="hiden"
             onClick={this.closeTeam}
             value=""
           >
             Close
-          </button>
-        </Container>
+          </Button>
+        </div>
       </div>
     );
   }

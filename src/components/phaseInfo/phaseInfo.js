@@ -8,6 +8,7 @@ import TurnCounter from "../turnCounter/turnCounter";
 import SetUp from "../setUp/setUp";
 import ControllingObjectives from "../otherStuff/controllingObjectives";
 import LineOfSight from "../otherStuff/lineOfSight";
+import SpecialRules from "../otherStuff/specialRules";
 
 class PhaseInfo extends Component {
   constructor(props) {
@@ -34,7 +35,10 @@ class PhaseInfo extends Component {
       display = <ControllingObjectives />;
     } else if (this.state.activePhase === "los") {
       display = <LineOfSight />;
+    } else if (this.state.activePhase === "specialRules") {
+      display = <SpecialRules />;
     }
+
     return (
       <div className="phaseOrder">
         <Container>
@@ -80,6 +84,14 @@ class PhaseInfo extends Component {
               </div>
               <div className="btnSection">
                 <h3>Other Stuff</h3>
+                <button
+                  onClick={this.phaseUpdate}
+                  className="phaseBtn button-53"
+                  value="specialRules"
+                  id="specialRules"
+                >
+                  Special rules
+                </button>
                 <button
                   onClick={this.phaseUpdate}
                   className="phaseBtn button-53"
