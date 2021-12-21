@@ -72,6 +72,11 @@ Font-Size: 16px;
   left: 2px;
 }
 
+#closeBtn{
+  width: 100%;
+  justify-content: center;
+}
+
 @media (min-width: 768px) {
   .button-53 {
     padding: .75rem 3rem;
@@ -140,6 +145,11 @@ Font-Size: 16px;
 
 .gKButton{
   background-color: silver;
+}
+
+.vGButton{
+  background-color: brown;
+  color:tan
 }
 
 

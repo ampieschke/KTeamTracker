@@ -136,7 +136,7 @@ class Tau extends Component {
                 Marksman Pathfinder
               </button>
             </Col>
-            <Col lg="9" className="rightBox">
+            <Col xs="9" className="rightBox">
               {rosterArea}
             </Col>
           </Row>

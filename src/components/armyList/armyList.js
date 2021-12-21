@@ -5,6 +5,7 @@ import { Container, Col, Row, Button } from "react-bootstrap";
 // import GreyKnights from "../armies/greyKnights";
 import GreyKnightSelector from "../greyKnights/greyKnightsSelector";
 import TauSelector from "../tau/tauSelector";
+import VeteranGuardsmen from "../veteranGuardsmen/veteranGuardsmen";
 
 class ArmyList extends Component {
   constructor(props) {
@@ -35,8 +36,8 @@ class ArmyList extends Component {
       army = <TauSelector />;
     } else if (this.state.activeTeam === "greyKnights") {
       army = <GreyKnightSelector />;
-    } else if (this.state.activeTeam === "none") {
-      army = "";
+    } else if (this.state.activeTeam === "vGuardsmen") {
+      army = <VeteranGuardsmen />;
     }
     return (
       <div>
@@ -66,15 +67,27 @@ class ArmyList extends Component {
                 </button>
               </div>
             </Col>
+            <Col lg="3">
+              <div>
+                <button
+                  className="button-54 vGButton"
+                  onClick={this.teamUpdate}
+                  value="vGuardsmen"
+                  id="vGuardsmen"
+                >
+                  Veteran Guardsmen
+                </button>
+              </div>
+            </Col>
           </Row>
           <Row id="armyArea">{army}</Row>
         </Container>
         <div className="d-grip gap-2">
           <Button
             variant="secondary"
-            size="lg"
+            justify-content="center"
             id="closeBtn"
-            className="hiden"
+            className="hiden button-54"
             onClick={this.closeTeam}
             value=""
           >
