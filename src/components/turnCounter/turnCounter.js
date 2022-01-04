@@ -26,12 +26,7 @@ class TurnCounter extends Component {
       <>
         <Container className="counter">
           <Col>
-            <h2 id="turn"> Turn: </h2>
-            <Row className="counterBits">
-              <Col className="">
-                <h2 id="turnCounter"> {turn} </h2>
-              </Col>
-            </Row>
+            <h2 id="turn"> Turn: {turn}</h2>
             <Row>
               <Col className="Btn col-6">
                 <button className="button-53" onClick={() => this.backTurn()}>

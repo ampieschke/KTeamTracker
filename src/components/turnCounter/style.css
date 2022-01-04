@@ -5,13 +5,13 @@
 
 #turn{
     font-weight: 500;
-    font-size: 80px;
+    font-size: 50px;
     Font-Family: 'Roboto Condensed', Sans-Serif;
 }
 
 #turnCounter{
     font-weight: 900;
-    font-size: 100px;
+    font-size: 60px;
     text-align: center;
     align-content: center;
 }

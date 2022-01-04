@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./style.css";
 import { Container, Col, Row } from "react-bootstrap";
+import TurnCounter from "../turnCounter/turnCounter";
 
 class Scoreboard extends Component {
   constructor(props) {
@@ -69,7 +70,10 @@ class Scoreboard extends Component {
         <Container className="scoreBoard">
           {/* Scoring */}
           <Row>
-            <Col lg="6">
+            <Col lg="3">
+              <TurnCounter />
+            </Col>
+            <Col lg="4">
               <h2> Team One </h2>
               <Row className="secondPart">
                 <Col className="col-4">
@@ -86,30 +90,6 @@ class Scoreboard extends Component {
                   </button>
                 </Col>
               </Row>
-            </Col>
-
-            <Col lg="6">
-              <h2> Team Two </h2>
-              <Row>
-                <Col className="col-4">
-                  <button className="btn" onClick={() => this.downTeamTwo()}>
-                    -
-                  </button>
-                </Col>
-                <Col className="col-4">
-                  <span className="score">{teamTwo}</span>
-                </Col>
-                <Col className="col-4">
-                  <button className="btn" onClick={() => this.upTeamTwo()}>
-                    +
-                  </button>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-          {/* CP Counter */}
-          <Row>
-            <Col lg="6">
               <Row className="secondPart">
                 <Col className="col-4">
                   <button className="btn" onClick={() => this.downcpOne()}>
@@ -127,7 +107,23 @@ class Scoreboard extends Component {
               </Row>
             </Col>
 
-            <Col lg="6">
+            <Col lg="4">
+              <h2> Team Two </h2>
+              <Row>
+                <Col className="col-4">
+                  <button className="btn" onClick={() => this.downTeamTwo()}>
+                    -
+                  </button>
+                </Col>
+                <Col className="col-4">
+                  <span className="score">{teamTwo}</span>
+                </Col>
+                <Col className="col-4">
+                  <button className="btn" onClick={() => this.upTeamTwo()}>
+                    +
+                  </button>
+                </Col>
+              </Row>
               <Row>
                 <Col className="col-4">
                   <button className="btn" onClick={() => this.downcpTwo()}>

@@ -4,7 +4,6 @@ import InitiativePhase from "../initiativePhase/InitiativePhase";
 import { Col, Row, Container } from "react-bootstrap";
 import StrategyPhase from "../strategyPhase/StrategyPhase";
 import FireFightPhase from "../fireFightPhase/FireFightPhase";
-import TurnCounter from "../turnCounter/turnCounter";
 import SetUp from "../setUp/setUp";
 import ControllingObjectives from "../otherStuff/controllingObjectives";
 import LineOfSight from "../otherStuff/lineOfSight";
@@ -44,7 +43,6 @@ class PhaseInfo extends Component {
         <Container>
           <Row>
             <Col lg="2" className="leftBox">
-              <TurnCounter />
               <div className="btnSection">
                 <button
                   onClick={this.phaseUpdate}
