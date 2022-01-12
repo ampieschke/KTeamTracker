@@ -37,6 +37,7 @@ class GreyKnightWar extends Component {
         <NemesisWardingStave />
         <Row className="abilities"></Row>
         <Row className="uniqueActions">
+          <h3>Unique Actions: </h3>
           <PsychicPowers />
         </Row>
       </Container>

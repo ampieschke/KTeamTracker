@@ -31,7 +31,7 @@ class StormBolter extends Component {
         </Row>
         <Row>
           <Col>
-            SR
+            SR:{" "}
             <button onClick={this.srUpdate} id="specialRule" value="relentless">
               Relentless
             </button>

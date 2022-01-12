@@ -7,22 +7,22 @@ class PsychicPowers extends Component {
     return (
       <Container>
         <br />
-        <h1>Psychic Powers </h1>
+        <h4>Psychic Powers</h4>
         <Col>
           <Row>
             <Col>
-              <Col className="weapon">Armoured Resilience</Col>
+              <Col className="ability">Armoured Resilience</Col>
               <p>
                 Until the end of the Turning Point, improve this operative's
                 save characteristic by 1.
               </p>
-              <Col className="weapon">Hammerhand</Col>
+              <Col className="ability">Hammerhand</Col>
               <p>
                 Until the end of the Turning Point, each time this operative
                 fights in combat, in the resolve successful hits step, the first
                 time it strikes, inflict 1 additional damage on the target.
               </p>
-              <Col className="weapon">Astral Aim</Col>
+              <Col className="ability">Astral Aim</Col>
               <p>
                 Until the end of the Turning Point, this operative's ranged
                 weapons gain the No Cover special rule.
