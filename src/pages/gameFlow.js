@@ -51,10 +51,6 @@ class GameFlow extends Component {
                 value="armylist"
                 id="armylist"
               >
-                {/* <i
-                  className="fas fa-book-open fa-2x"
-                  style={{ color: "white" }}
-                ></i> */}
                 Army Lists
               </button>
             </Col>
