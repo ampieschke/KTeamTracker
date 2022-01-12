@@ -23,27 +23,21 @@ class BondingKnife extends Component {
 
     return (
       <Container>
-        <Row className="weapon">
-          <Col xs="3">Bonding Knife</Col>
-          <Col xs="9">
-            <Row>
-              <Col xs="2">A 3</Col>
-              <Col xs="2">WS 4+</Col>
-              <Col xs="2">D 3/4</Col>
-              <Col xs="2">
-                SR
-                <button
-                  onClick={this.srUpdate}
-                  id="specialRule"
-                  value="balanced"
-                >
-                  Balanced
-                </button>
-              </Col>
-              <Col xs="2">! -</Col>
-            </Row>
+        <Col className="weapon">Bonding Knife</Col>
+        <Row>
+          <Col>A 3</Col>
+          <Col>WS 4+</Col>
+          <Col>D 3/4</Col>
+        </Row>
+        <Row>
+          <Col>
+            SR:{" "}
+            <button onClick={this.srUpdate} id="specialRule" value="balanced">
+              Balanced
+            </button>
           </Col>
         </Row>
+
         <Row className="srArea">{srArea}</Row>
       </Container>
     );

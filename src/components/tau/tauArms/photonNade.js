@@ -26,34 +26,32 @@ class PhotonNade extends Component {
 
     return (
       <Container>
-        <Row className="weapon">
-          <Col xs="3">Photon Grenade</Col>
-          <Col xs="9">
-            <Row>
-              <p>
-                Select a visible target and roll a D6 - subtracting 1 from the
-                result as follows:
-              </p>
-              <ul>
-                <li>
-                  If that enemy operative is not in the operatives Line of Sight
-                </li>
-                <li>
-                  If that enemy operative is more than PENTAGON from this
-                  operative
-                </li>
-              </ul>
-              <p>
-                On a 2+ that enemy operative gains a Photon token. While an
-                operative has any Photon tokens, subtract CIRCLE from its
-                Movement characteristic and it cannot perform DASH actions. At
-                the end of an operative's activation, remove all photon tokens
-                it has. This operative can only perform this action once and
-                cannot perform this action if it is within Engagement Range of
-                an enemy operative.{" "}
-              </p>
-            </Row>
-          </Col>
+        <Row>
+          <Col className="weapon">Photon Grenade</Col>
+          <Row>
+            <p>
+              Select a visible target and roll a D6 - subtracting 1 from the
+              result as follows:
+            </p>
+            <ul>
+              <li>
+                If that enemy operative is not in the operatives Line of Sight
+              </li>
+              <li>
+                If that enemy operative is more than PENTAGON from this
+                operative
+              </li>
+            </ul>
+            <p>
+              On a 2+ that enemy operative gains a Photon token. While an
+              operative has any Photon tokens, subtract CIRCLE from its Movement
+              characteristic and it cannot perform DASH actions. At the end of
+              an operative's activation, remove all photon tokens it has. This
+              operative can only perform this action once and cannot perform
+              this action if it is within Engagement Range of an enemy
+              operative.
+            </p>
+          </Row>
         </Row>
         <Row className="srArea">{srArea}</Row>
       </Container>

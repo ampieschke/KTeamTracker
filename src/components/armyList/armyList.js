@@ -42,7 +42,7 @@ class ArmyList extends Component {
     return (
       <div>
         <Container>
-          <Row>
+          <Row className="justify-content-md-center">
             <Col lg="3">
               <div>
                 <button

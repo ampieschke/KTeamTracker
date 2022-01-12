@@ -29,35 +29,32 @@ class RailRifle extends Component {
 
     return (
       <Container>
-        <Row className="weapon">
-          <Col xs="3">Rail Rifle</Col>
-          <Col xs="9">
-            <Row>
-              <Col xs="2">A 4</Col>
-              <Col xs="2">BS 4+</Col>
-              <Col xs="2">D 4/4</Col>
-              <Col xs="2">
-                SR -
-                <button onClick={this.srUpdate} id="specialRule" value="ap">
-                  AP1
-                </button>
-                <button
-                  onClick={this.srUpdate}
-                  id="specialRule"
-                  value="leathal"
-                >
-                  Leathal 5+
-                </button>
-              </Col>
-              <Col xs="2">
-                ! -
-                <button onClick={this.srUpdate} id="specialRule" value="mw">
-                  MW2
-                </button>
-              </Col>
-            </Row>
+        <Col className="weapon">Rail Rifle</Col>
+        <Row>
+          <Col>A 4</Col>
+          <Col>BS 4+</Col>
+          <Col>D 4/4</Col>
+        </Row>
+        <Row>
+          <Col>
+            SR:{" "}
+            <button onClick={this.srUpdate} id="specialRule" value="ap">
+              AP1
+            </button>
+            <button onClick={this.srUpdate} id="specialRule" value="leathal">
+              Leathal 5+
+            </button>
           </Col>
         </Row>
+        <Row>
+          <Col>
+            !:{" "}
+            <button onClick={this.srUpdate} id="specialRule" value="mw">
+              MW2
+            </button>
+          </Col>
+        </Row>
+
         <Row className="srArea">{srArea}</Row>
       </Container>
     );

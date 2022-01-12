@@ -22,21 +22,18 @@ class SuppressedPulseCarbine extends Component {
     }
     return (
       <Container>
-        <Row className="weapon">
-          <Col xs="3">Suppressed Pulse Carbine</Col>
-          <Col xs="9">
-            <Row>
-              <Col xs="2">A 4</Col>
-              <Col xs="2">BS 4+</Col>
-              <Col xs="2">D 4/5</Col>
-              <Col xs="2">
-                SR{" "}
-                <button onClick={this.srUpdate} id="specialRule" value="silent">
-                  Silent
-                </button>
-              </Col>
-              <Col xs="2">! -</Col>
-            </Row>
+        <Col className="weapon">Suppressed Pulse Carbine</Col>
+        <Row>
+          <Col>A 4</Col>
+          <Col>BS 4+</Col>
+          <Col>D 4/5</Col>
+        </Row>
+        <Row>
+          <Col>
+            SR:{" "}
+            <button onClick={this.srUpdate} id="specialRule" value="silent">
+              Silent
+            </button>
           </Col>
         </Row>
         <Row className="srArea">{srArea}</Row>

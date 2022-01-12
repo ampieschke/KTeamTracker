@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Collapse } from "react-bootstrap";
 import Indirect from "../../specialRules/indirect";
 import Limited from "../../specialRules/limited";
 
@@ -26,33 +26,25 @@ class FusionNade extends Component {
 
     return (
       <Container>
-        <Row className="weapon">
-          <Col xs="3">Fusion Grenade</Col>
-          <Col xs="9">
-            <Row>
-              <Col xs="2">A 4</Col>
-              <Col xs="2">BS 3+</Col>
-              <Col xs="2">D 4/3</Col>
-              <Col xs="2">
-                SR Range-PENTAGON, AP2,
-                <button
-                  onClick={this.srUpdate}
-                  id="specialRule"
-                  value="limited"
-                >
-                  Limited
-                </button>
-                <button
-                  onClick={this.srUpdate}
-                  id="specialRule"
-                  value="indirect"
-                >
-                  Indirect
-                </button>
-              </Col>
-              <Col xs="2">! MW3</Col>
-            </Row>
+        <Col className="weapon">Fusion Grenade</Col>
+        <Row>
+          <Col>A 4</Col>
+          <Col>BS 3+</Col>
+          <Col>D 4/3</Col>
+        </Row>
+        <Row>
+          <Col>
+            SR: Range-PENTAGON, AP2,
+            <button onClick={this.srUpdate} id="specialRule" value="limited">
+              Limited
+            </button>
+            <button onClick={this.srUpdate} id="specialRule" value="indirect">
+              Indirect
+            </button>
           </Col>
+        </Row>
+        <Row>
+          <Col>!: MW3</Col>
         </Row>
         <Row className="srArea">{srArea}</Row>
       </Container>

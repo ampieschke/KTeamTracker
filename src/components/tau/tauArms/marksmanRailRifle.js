@@ -32,59 +32,60 @@ class MarksmanRailRifle extends Component {
 
     return (
       <Container>
-        <Row className="weapon">
-          <Col xs="3">Marksman Rail Rifle - Standard</Col>
-          <Col xs="9">
-            <Row>
-              <Col xs="2">A 4</Col>
-              <Col xs="2">BS 3+</Col>
-              <Col xs="2">D 4/4</Col>
-              <Col xs="2">
-                SR -
-                <button onClick={this.srUpdate} id="specialRule" value="ap">
-                  AP1
-                </button>
-                <button
-                  onClick={this.srUpdate}
-                  id="specialRule"
-                  value="leathal"
-                >
-                  Leathal 5+
-                </button>
-              </Col>
-              <Col xs="2">
-                ! -
-                <button onClick={this.srUpdate} id="specialRule" value="mw">
-                  MW2
-                </button>
-              </Col>
-            </Row>
-          </Col>
+        <Row>
+          <Col className="weapon">Marksman Rail Rifle - Standard</Col>
+
+          <Row>
+            <Col>A 4</Col>
+            <Col>BS 3+</Col>
+            <Col>D 4/4</Col>
+          </Row>
+          <Row>
+            <Col>
+              SR:{" "}
+              <button onClick={this.srUpdate} id="specialRule" value="ap">
+                AP1
+              </button>
+              <button onClick={this.srUpdate} id="specialRule" value="leathal">
+                Leathal 5+
+              </button>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              !:{" "}
+              <button onClick={this.srUpdate} id="specialRule" value="mw">
+                MW2
+              </button>
+            </Col>
+          </Row>
         </Row>
-        <Row className="weapon">
-          <Col xs="3">Marksman Rail Rifle - Dart Round</Col>
-          <Col xs="9">
-            <Row>
-              <Col xs="2">A 4</Col>
-              <Col xs="2">BS 3+</Col>
-              <Col xs="2">D 3/3</Col>
-              <Col xs="2">
-                SR -
-                <button onClick={this.srUpdate} id="specialRule" value="ap">
-                  AP1
-                </button>
-                <button onClick={this.srUpdate} id="specialRule" value="silent">
-                  Silent
-                </button>
-              </Col>
-              <Col xs="2">
-                ! -
-                <button onClick={this.srUpdate} id="specialRule" value="mw">
-                  MW2
-                </button>
-              </Col>
-            </Row>
-          </Col>
+        <Row>
+          <Col className="weapon">Marksman Rail Rifle - Dart Round</Col>
+          <Row>
+            <Col>A 4</Col>
+            <Col>BS 3+</Col>
+            <Col>D 3/3</Col>
+          </Row>
+          <Row>
+            <Col>
+              SR:{" "}
+              <button onClick={this.srUpdate} id="specialRule" value="ap">
+                AP1
+              </button>
+              <button onClick={this.srUpdate} id="specialRule" value="silent">
+                Silent
+              </button>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              !:{" "}
+              <button onClick={this.srUpdate} id="specialRule" value="mw">
+                MW2
+              </button>
+            </Col>
+          </Row>
         </Row>
         <Row className="srArea">{srArea}</Row>
       </Container>

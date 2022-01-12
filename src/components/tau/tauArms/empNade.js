@@ -29,40 +29,24 @@ class EMPNade extends Component {
 
     return (
       <Container>
-        <Row className="weapon">
-          <Col xs="3">EMP Grenade</Col>
-          <Col xs="9">
-            <Row>
-              <Col xs="2">A 4</Col>
-              <Col xs="2">BS 3+</Col>
-              <Col xs="2">D 2/3</Col>
-              <Col xs="2">
-                SR
-                <button
-                  onClick={this.srUpdate}
-                  id="specialRule"
-                  value="lethalX"
-                >
-                  Lethal x
-                </button>
-                x = the target's unmodified save characteristic.
-                <button
-                  onClick={this.srUpdate}
-                  id="specialRule"
-                  value="limited"
-                >
-                  Limited
-                </button>
-                <button
-                  onClick={this.srUpdate}
-                  id="specialRule"
-                  value="indirect"
-                >
-                  Indirect
-                </button>
-              </Col>
-              <Col xs="2">! -</Col>
-            </Row>
+        <Col className="weapon">EMP Grenade</Col>
+        <Row>
+          <Col>A 4</Col>
+          <Col>BS 3+</Col>
+          <Col>D 2/3</Col>
+        </Row>
+        <Row>
+          <Col>
+            SR:{" "}
+            <button onClick={this.srUpdate} id="specialRule" value="lethalX">
+              Lethal x
+            </button>
+            <button onClick={this.srUpdate} id="specialRule" value="limited">
+              Limited
+            </button>
+            <button onClick={this.srUpdate} id="specialRule" value="indirect">
+              Indirect
+            </button>
           </Col>
         </Row>
         <Row className="srArea">{srArea}</Row>

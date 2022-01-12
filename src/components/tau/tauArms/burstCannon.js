@@ -29,35 +29,24 @@ class BurstCannon extends Component {
 
     return (
       <Container>
-        <Row className="weapon">
-          <Col xs="3">Pulse Carbine</Col>
-          <Col xs="9">
-            <Row>
-              <Col xs="2">A 6</Col>
-              <Col xs="2">BS 4+</Col>
-              <Col xs="2">D 3/4</Col>
-              <Col xs="2">
-                SR -
-                <button onClick={this.srUpdate} id="specialRule" value="heavy">
-                  Heavy
-                </button>
-                <button
-                  onClick={this.srUpdate}
-                  id="specialRule"
-                  value="ceaseless"
-                >
-                  Ceaseless
-                </button>
-                <button
-                  onClick={this.srUpdate}
-                  id="specialRule"
-                  value="fusillade"
-                >
-                  Fusillaed
-                </button>
-              </Col>
-              <Col xs="2">! -</Col>
-            </Row>
+        <Col className="weapon">Pulse Carbine</Col>
+        <Row>
+          <Col>A 6</Col>
+          <Col>BS 4+</Col>
+          <Col>D 3/4</Col>
+        </Row>
+        <Row>
+          <Col>
+            SR:{" "}
+            <button onClick={this.srUpdate} id="specialRule" value="heavy">
+              Heavy
+            </button>
+            <button onClick={this.srUpdate} id="specialRule" value="ceaseless">
+              Ceaseless
+            </button>
+            <button onClick={this.srUpdate} id="specialRule" value="fusillade">
+              Fusillaed
+            </button>
           </Col>
         </Row>
         <Row className="srArea">{srArea}</Row>
