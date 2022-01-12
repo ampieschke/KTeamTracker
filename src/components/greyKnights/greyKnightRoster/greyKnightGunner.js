@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import PsychicPowers from "../psychicPowers/psychicPowers";
 import Incinerator from "../greyKnightArms/incinerator";
 import Psilencer from "../greyKnightArms/psilencer";
-import Psycannon from "../greyKnightArms/psilencer";
+import Psycannon from "../greyKnightArms/psycannon";
 import Fists from "../greyKnightArms/fists";
 
 class GreyKnightGunner extends Component {
@@ -17,14 +17,14 @@ class GreyKnightGunner extends Component {
           </Col>
           <Col xs="7">
             <Row>
-              <Col xs="2">M 3</Col>
-              <Col xs="2">APL 3</Col>
-              <Col xs="2">GA 1</Col>
+              <Col xs="4">M 3</Col>
+              <Col xs="4">APL 3</Col>
+              <Col xs="4">GA 1</Col>
             </Row>
             <Row>
-              <Col xs="2">DF 3</Col>
-              <Col xs="2">SV 3+</Col>
-              <Col xs="2">W 11</Col>
+              <Col xs="4">DF 3</Col>
+              <Col xs="4">SV 3+</Col>
+              <Col xs="4">W 11</Col>
             </Row>
           </Col>
         </Row>

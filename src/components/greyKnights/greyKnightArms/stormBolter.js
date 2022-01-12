@@ -23,25 +23,18 @@ class StormBolter extends Component {
 
     return (
       <Container>
-        <Row className="weapon">
-          <Col xs="3">Storm Bolter</Col>
-          <Col xs="9">
-            <Row>
-              <Col xs="2">A 4</Col>
-              <Col xs="2">WS 3+</Col>
-              <Col xs="2">D 3/4</Col>
-              <Col xs="2">
-                SR
-                <button
-                  onClick={this.srUpdate}
-                  id="specialRule"
-                  value="relentless"
-                >
-                  Relentless
-                </button>
-              </Col>
-              <Col xs="2">! -</Col>
-            </Row>
+        <Col className="weapon">Storm Bolter</Col>
+        <Row>
+          <Col>A 4</Col>
+          <Col>WS 3+</Col>
+          <Col>D 3/4</Col>
+        </Row>
+        <Row>
+          <Col>
+            SR
+            <button onClick={this.srUpdate} id="specialRule" value="relentless">
+              Relentless
+            </button>
           </Col>
         </Row>
         <Row className="srArea">{srArea}</Row>

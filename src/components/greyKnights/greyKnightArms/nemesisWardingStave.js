@@ -23,21 +23,18 @@ class NemesisWardingStave extends Component {
 
     return (
       <Container>
-        <Row className="weapon">
-          <Col xs="3">Nemesis Warding Stave</Col>
-          <Col xs="9">
-            <Row>
-              <Col xs="2">A 5</Col>
-              <Col xs="2">WS 3+</Col>
-              <Col xs="2">D 4/5</Col>
-              <Col xs="2">SR -</Col>
-              <Col xs="2">
-                ! -
-                <button onClick={this.srUpdate} id="specialRule" value="stun">
-                  Stun
-                </button>
-              </Col>
-            </Row>
+        <Col className="weapon">Nemesis Warding Stave</Col>
+        <Row>
+          <Col>A 5</Col>
+          <Col>WS 3+</Col>
+          <Col>D 4/5</Col>
+        </Row>
+        <Row>
+          <Col>
+            !:{" "}
+            <button onClick={this.srUpdate} id="specialRule" value="stun">
+              Stun
+            </button>
           </Col>
         </Row>
         <Row className="srArea">{srArea}</Row>

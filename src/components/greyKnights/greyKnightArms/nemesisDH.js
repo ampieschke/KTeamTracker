@@ -23,21 +23,18 @@ class NemesisDaemonHammer extends Component {
 
     return (
       <Container>
-        <Row className="weapon">
-          <Col xs="3">Nemesis Daemon Hammer</Col>
-          <Col xs="9">
-            <Row>
-              <Col xs="2">A 5</Col>
-              <Col xs="2">WS 4+</Col>
-              <Col xs="2">D 5/6</Col>
-              <Col xs="2">SR</Col>
-              <Col xs="2">
-                ! -
-                <button onClick={this.srUpdate} id="specialRule" value="stun">
-                  Stun
-                </button>
-              </Col>
-            </Row>
+        <Col className="weapon">Nemesis Daemon Hammer</Col>
+        <Row>
+          <Col>A 5</Col>
+          <Col>WS 4+</Col>
+          <Col>D 5/6</Col>
+        </Row>
+        <Row>
+          <Col>
+            !:{" "}
+            <button onClick={this.srUpdate} id="specialRule" value="stun">
+              Stun
+            </button>
           </Col>
         </Row>
         <Row className="srArea">{srArea}</Row>

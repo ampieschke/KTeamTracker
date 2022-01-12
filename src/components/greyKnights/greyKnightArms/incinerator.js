@@ -29,31 +29,24 @@ class Incinerator extends Component {
 
     return (
       <Container>
-        <Row className="weapon">
-          <Col xs="3">Incinerator</Col>
-          <Col xs="9">
-            <Row>
-              <Col xs="2">A 6</Col>
-              <Col xs="2">WS 2+</Col>
-              <Col xs="2">D 2/3</Col>
-              <Col xs="2">
-                SR -
-                <button onClick={this.srUpdate} id="specialRule" value="heavy">
-                  Heavy
-                </button>
-                <button onClick={this.srUpdate} id="specialRule" value="rng">
-                  Rng PENTAGON
-                </button>
-                <button
-                  onClick={this.srUpdate}
-                  id="specialRule"
-                  value="torrent"
-                >
-                  Torrent CIRCLE
-                </button>
-              </Col>
-              <Col xs="2">! -</Col>
-            </Row>
+        <Col className="weapon">Incinerator</Col>
+        <Row>
+          <Col>A 6</Col>
+          <Col>WS 2+</Col>
+          <Col>D 2/3</Col>
+        </Row>
+        <Row>
+          <Col>
+            SR:{" "}
+            <button onClick={this.srUpdate} id="specialRule" value="heavy">
+              Heavy
+            </button>
+            <button onClick={this.srUpdate} id="specialRule" value="rng">
+              Rng PENTAGON
+            </button>
+            <button onClick={this.srUpdate} id="specialRule" value="torrent">
+              Torrent CIRCLE
+            </button>
           </Col>
         </Row>
         <Row className="srArea">{srArea}</Row>

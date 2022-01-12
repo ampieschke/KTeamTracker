@@ -22,21 +22,18 @@ class Psycannon extends Component {
     }
     return (
       <Container>
-        <Row className="weapon">
-          <Col xs="3">Psycannon</Col>
-          <Col xs="9">
-            <Row>
-              <Col xs="2">A 5</Col>
-              <Col xs="2">WS 3+</Col>
-              <Col xs="2">D 4/6</Col>
-              <Col xs="2">
-                SR -
-                <button onClick={this.srUpdate} id="specialRule" value="heavy">
-                  Heavy
-                </button>
-              </Col>
-              <Col xs="2">! -</Col>
-            </Row>
+        <Col className="weapon">Psycannon</Col>
+        <Row>
+          <Col>A 5</Col>
+          <Col>WS 3+</Col>
+          <Col>D 4/6</Col>
+        </Row>
+        <Row>
+          <Col>
+            SR:{" "}
+            <button onClick={this.srUpdate} id="specialRule" value="heavy">
+              Heavy
+            </button>
           </Col>
         </Row>
         <Row className="srArea">{srArea}</Row>

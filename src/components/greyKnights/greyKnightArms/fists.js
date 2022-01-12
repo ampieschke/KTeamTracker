@@ -6,18 +6,14 @@ class Fists extends Component {
   render() {
     return (
       <Container>
-        <Row className="weapon">
-          <Col xs="3">Fists</Col>
-          <Col xs="9">
-            <Row>
-              <Col xs="2">A 4</Col>
-              <Col xs="2">WS 3+</Col>
-              <Col xs="2">D 3/4</Col>
-              <Col xs="2">SR -</Col>
-              <Col xs="2">! -</Col>
-            </Row>
-          </Col>
-        </Row>
+        <Col className="weapon">Fists</Col>
+        <Col>
+          <Row>
+            <Col>A 4</Col>
+            <Col>WS 3+</Col>
+            <Col>D 3/4</Col>
+          </Row>
+        </Col>
       </Container>
     );
   }
