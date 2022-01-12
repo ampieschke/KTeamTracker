@@ -1,0 +1,100 @@
+[
+
+    {
+      "id": 1,
+      "operative":"plagueMarineWarrior",
+      "m":"2",
+      "apl":"3",
+      "ga":"1",
+      "df":"3",
+      "sv":"3+",
+      "w":"12",
+      "weapons":"boltgun, plagueKnife",
+      "abilities":"disgustinglyResilient",
+      "uniqueActions":""
+    },
+
+    {
+      "id": 2,
+      "operative":"plagueMarineGunner",
+      "m":"2",
+      "apl":"3",
+      "ga":"1",
+      "df":"3",
+      "sv":"3+",
+      "w":"12",
+      "weapons":"meltaGun, plagueBelcher, plasmaGun, plagueKnife",
+      "abilities":"disgustinglyResiliant",
+      "uniqueActions":""
+    },
+
+    {
+      "id": 3,
+      "operative":"plagueMarineHeavyGunner",
+      "m":"2",
+      "apl":"3",
+      "ga":"1",
+      "df":"3",
+      "sv":"3+",
+      "w":"12",
+      "weapons":"blightLauncher",
+      "abilities":"disgustinglyResilient",
+      "uniqueActions":""
+    },
+
+    {
+      "id": 4,
+      "operative":"plagueMarineFighter",
+      "m":"2",
+      "apl":"3",
+      "ga":"1",
+      "df":"3",
+      "sv":"3+",
+      "w":"12",
+      "weapons":"boltPistol, bubonicAxe, flailOfCorruption",
+      "abilities":"disgustinglyResilient",
+      "uniqueActions":""
+    },
+
+    {
+      "id": 5,
+      "operative":"plagueMarineIconBearer",
+      "m":"2",
+      "apl":"3",
+      "ga":"1",
+      "df":"3",
+      "sv":"3+",
+      "w":"12",
+      "weapons":"boltgun, plagueKnife",
+      "abilities":"disgustinglyResilient, iconBearer",
+      "uniqueActions":"iconOfDecay(1AP)"
+    },
+
+    {
+      "id": 6,
+      "operative":"plagueMarineChampion",
+      "m":"3",
+      "apl":"3",
+      "ga":"1",
+      "df":"3",
+      "sv":"3+",
+      "w":"13",
+      "weapons":"boltgun, boltPistol, plasmaPistol, plagueKnife, plagueSword, powerFist",
+      "abilities":"disgustinglyResilient",
+      "uniqueActions":""
+    },
+
+    {
+      "id": 7,
+      "operative":"poxwalker",
+      "m":"2",
+      "apl":"2",
+      "ga":"2",
+      "df":"3",
+      "sv":"6+",
+      "w":"7",
+      "weapons":"improvisedWeapon",
+      "abilities":"mindless, disgustinglyResilient",
+      "uniqueActions":""
+    }
+  ]

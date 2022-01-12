@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 import React from "react";
 import "./App.css";
 import Auth0ProviderWithHistory from "./auth0Provider";
@@ -12,10 +12,8 @@ function App() {
   return (
     <Auth0ProviderWithHistory>
       <div className="App">
-        <Container>
-          <LoginButton />
-          <GameFlow />
-        </Container>
+        <LoginButton />
+        <GameFlow />
         {/* <BrowserRouter>
           <Routes>
             <Route path="/" element={<GameFlow />} />

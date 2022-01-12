@@ -27,13 +27,10 @@ class GameFlow extends Component {
     return (
       <div>
         <Scoreboard />
-        <Container> {mainDisplay}</Container>
-
-        {/* <ArmyList />
-          <PhaseInfo /> */}
-        <Container className="bottomPart">
+        {mainDisplay}
+        <div className="bottomPart text-center">
           <Row>
-            <Col xs="4" className="footicon">
+            <Col xs="4" className="footicon ">
               <button
                 onClick={this.displayUpdate}
                 className=""
@@ -61,8 +58,18 @@ class GameFlow extends Component {
                 Army Lists
               </button>
             </Col>
+            <Col xs="4" className="footicon">
+              <button
+                onClick={this.displayUpdate}
+                className=""
+                value="/"
+                id="/"
+              >
+                Scenario Generator
+              </button>
+            </Col>
           </Row>
-        </Container>
+        </div>
       </div>
     );
   }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 
-import GreyKnights from "../armies/greyKnights";
+// import GreyKnights from "../armies/greyKnights";
 
 class VeteranGuardsmen extends Component {
   constructor(props) {
@@ -16,9 +16,9 @@ class VeteranGuardsmen extends Component {
 
   render() {
     let activeArea;
-    if (this.state.activeChoice === "roster") {
-      activeArea = <GreyKnights />;
-    }
+    // if (this.state.activeChoice === "roster") {
+    //   activeArea = <GreyKnights />;
+    // }
     // else if (this.state.activeChoice === "strategicPloys") {
     //   activeArea = <GreyKnightGunner />;
     // } else if (this.state.activeChoice === "tacticalPloys") {
@@ -27,42 +27,7 @@ class VeteranGuardsmen extends Component {
 
     return (
       <Container>
-        <h1>Grey Knights</h1>
-        <div>
-          <Row>
-            <Col xs="3">
-              <button
-                onClick={this.choiceUpdate}
-                className="button-54 gKButton"
-                value="roster"
-                id="roster"
-              >
-                Roster
-              </button>
-            </Col>
-            <Col xs="3">
-              <button
-                onClick={this.choiceUpdate}
-                className="button-54 gKButton"
-                value="greyKnightWar"
-                id="greyKnightWar"
-              >
-                Strategic Ploys
-              </button>
-            </Col>
-            <Col xs="3">
-              <button
-                onClick={this.choiceUpdate}
-                className="button-54 gKButton"
-                value="greyKnightGunner"
-                id="greyKnightGunner"
-              >
-                Tactical Ploys
-              </button>
-            </Col>
-          </Row>
-          <Row>{activeArea}</Row>
-        </div>
+        <h1>Coming Soon!</h1>
       </Container>
     );
   }
