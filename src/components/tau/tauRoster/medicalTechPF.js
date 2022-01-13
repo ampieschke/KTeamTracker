@@ -33,11 +33,14 @@ class MedicalTechPF extends Component {
           <Fists />
         </Row>
         <Row className="abilities">
+          <h3 className="text-center">Abilities: </h3>
           <Medic />
+        </Row>
+        <Row className="uniqueActions">
+          <h3 className="text-center">Abilities: </h3>
           <Medikit />
           <MarkerLight />
         </Row>
-        <Row className="uniqueActions"></Row>
       </Container>
     );
   }

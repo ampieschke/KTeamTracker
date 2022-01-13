@@ -7,7 +7,7 @@ class Signal extends Component {
     return (
       <Container>
         <Col className="ability">Signal (1AP)</Col>
-        <Col xs="9">
+        <Col>
           <p>
             Select one friendly Pathfinder operative within PENTAGON of and
             visible to this operative. Add 1 to its APL. This operative cannot

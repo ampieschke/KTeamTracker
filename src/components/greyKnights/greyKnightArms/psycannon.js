@@ -21,7 +21,7 @@ class Psycannon extends Component {
       srArea = <Heavy />;
     }
     return (
-      <Container>
+      <div>
         <Col className="weapon">Psycannon</Col>
         <Row>
           <Col>A 5</Col>
@@ -37,7 +37,7 @@ class Psycannon extends Component {
           </Col>
         </Row>
         <Row className="srArea">{srArea}</Row>
-      </Container>
+      </div>
     );
   }
 }

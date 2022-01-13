@@ -30,10 +30,11 @@ class ShasLa extends Component {
           <PulseCarbine />
           <Fists />
         </Row>
-        <Row className="abilities">
+        <Row className="abilities"></Row>
+        <Row className="uniqueActions">
+          <h3 className="text-center">Unique Actions: </h3>
           <MarkerLight />
         </Row>
-        <Row className="uniqueActions"></Row>
       </Container>
     );
   }

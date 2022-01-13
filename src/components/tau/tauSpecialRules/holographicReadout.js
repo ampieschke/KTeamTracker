@@ -7,7 +7,7 @@ class HolographicReadout extends Component {
     return (
       <Container>
         <Col className="ability">Holographic Readout</Col>
-        <Col xs="9">
+        <Col>
           <p>
             Once per battle, when a friendly Pathfinder operative (excluding
             drones) is activated within SQUARE of and is Visible to this

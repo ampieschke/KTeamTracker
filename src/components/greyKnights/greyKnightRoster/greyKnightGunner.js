@@ -36,6 +36,7 @@ class GreyKnightGunner extends Component {
 
         <Row className="abilities"></Row>
         <Row className="uniqueActions">
+          <h3 className="text-center">Unique Actions: </h3>
           <PsychicPowers />
         </Row>
       </Container>

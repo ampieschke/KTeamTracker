@@ -24,7 +24,7 @@ class Psilencer extends Component {
       srArea = <Fusillade />;
     }
     return (
-      <Container>
+      <div>
         <Col className="weapon">Psilencer</Col>
         <Row>
           <Col>A 6</Col>
@@ -43,7 +43,7 @@ class Psilencer extends Component {
           </Col>
         </Row>
         <Row className="srArea">{srArea}</Row>
-      </Container>
+      </div>
     );
   }
 }

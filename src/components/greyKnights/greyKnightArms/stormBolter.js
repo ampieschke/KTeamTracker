@@ -22,7 +22,7 @@ class StormBolter extends Component {
     }
 
     return (
-      <Container>
+      <div>
         <Col className="weapon">Storm Bolter</Col>
         <Row>
           <Col>A 4</Col>
@@ -38,7 +38,7 @@ class StormBolter extends Component {
           </Col>
         </Row>
         <Row className="srArea">{srArea}</Row>
-      </Container>
+      </div>
     );
   }
 }

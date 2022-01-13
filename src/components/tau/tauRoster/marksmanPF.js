@@ -31,6 +31,8 @@ class MarksmanPF extends Component {
           <Fists />
         </Row>
         <Row className="abilities">
+          <h3 className="text-center">Abilities: </h3>
+
           <InertialDampener />
         </Row>
         <Row className="uniqueActions"></Row>

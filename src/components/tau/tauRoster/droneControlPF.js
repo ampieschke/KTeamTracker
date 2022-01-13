@@ -33,11 +33,15 @@ class DroneControlPathfinder extends Component {
           <Fists />
         </Row>
         <Row className="abilities">
+          <h3 className="text-center">Abilities: </h3>
+
           <DroneScout />
+        </Row>
+        <Row className="uniqueActions">
+          <h3 className="text-center">Unique Actions: </h3>
           <ControlDrone />
           <MarkerLight />
         </Row>
-        <Row className="uniqueActions"></Row>
       </Container>
     );
   }

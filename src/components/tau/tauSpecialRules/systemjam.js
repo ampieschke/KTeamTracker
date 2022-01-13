@@ -7,7 +7,7 @@ class SystemJam extends Component {
     return (
       <Container>
         <Col className="ability">System Jam (1AP)</Col>
-        <Col xs="9">
+        <Col>
           <p>
             Select one enemy operative visable to this operative. Subtract 1
             from its APL. This operative cannot perform this action if it has a

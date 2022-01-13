@@ -33,11 +33,15 @@ class TranspectralPathfinder extends Component {
           <Fists />
         </Row>
         <Row className="abilities">
+          <h3 className="text-center">Abilities: </h3>
+
           <MultiSpectralSensor />
-          <MarkerLight />
-          <SystemJam />
         </Row>
-        <Row className="uniqueActions"></Row>
+        <Row className="uniqueActions">
+          <h3 className="text-center">Unique Actions: </h3>
+          <SystemJam />
+          <MarkerLight />
+        </Row>
       </Container>
     );
   }

@@ -22,7 +22,7 @@ class NemesisFalchions extends Component {
     }
 
     return (
-      <Container>
+      <div>
         <Col className="weapon">Nemesis Falchions</Col>
         <Row>
           <Col>A 5</Col>
@@ -38,7 +38,7 @@ class NemesisFalchions extends Component {
           </Col>
         </Row>
         <Row className="srArea">{srArea}</Row>
-      </Container>
+      </div>
     );
   }
 }

@@ -7,7 +7,8 @@ import PhotonNade from "../tauArms/photonNade";
 import FusionNade from "../tauArms/fusionNade";
 import PulseCarbine from "../tauArms/pulseCarbine";
 import Grenadier from "../tauSpecialRules/grenadier";
-// import MarkerLight from "../tauSpecialRules/markerLight";
+import MarkerLight from "../tauSpecialRules/markerLight";
+import NanocrystallineHeadgear from "../tauSpecialRules/nanocrystallineHG";
 
 class AssaultGrenadierPF extends Component {
   render() {
@@ -38,9 +39,14 @@ class AssaultGrenadierPF extends Component {
           <Fists />
         </Row>
         <Row className="abilities">
+          <h3 className="text-center">Abilities: </h3>
           <Grenadier />
+          <NanocrystallineHeadgear />
         </Row>
-        <Row className="uniqueActions"></Row>
+        <Row className="uniqueActions">
+          <h3 className="text-center">Unique Actions: </h3>
+          <MarkerLight />
+        </Row>
       </Container>
     );
   }

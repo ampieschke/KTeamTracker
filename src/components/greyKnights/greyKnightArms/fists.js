@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 class Fists extends Component {
   render() {
     return (
-      <Container>
+      <div>
         <Col className="weapon">Fists</Col>
         <Col>
           <Row>
@@ -14,7 +14,7 @@ class Fists extends Component {
             <Col>D 3/4</Col>
           </Row>
         </Col>
-      </Container>
+      </div>
     );
   }
 }

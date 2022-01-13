@@ -22,7 +22,7 @@ class NemesisWardingStave extends Component {
     }
 
     return (
-      <Container>
+      <div>
         <Col className="weapon">Nemesis Warding Stave</Col>
         <Row>
           <Col>A 5</Col>
@@ -38,7 +38,7 @@ class NemesisWardingStave extends Component {
           </Col>
         </Row>
         <Row className="srArea">{srArea}</Row>
-      </Container>
+      </div>
     );
   }
 }

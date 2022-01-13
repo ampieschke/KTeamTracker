@@ -28,7 +28,7 @@ class Incinerator extends Component {
     }
 
     return (
-      <Container>
+      <div>
         <Col className="weapon">Incinerator</Col>
         <Row>
           <Col>A 6</Col>
@@ -50,7 +50,7 @@ class Incinerator extends Component {
           </Col>
         </Row>
         <Row className="srArea">{srArea}</Row>
-      </Container>
+      </div>
     );
   }
 }
