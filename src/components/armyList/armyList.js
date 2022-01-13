@@ -82,7 +82,7 @@ class ArmyList extends Component {
           </Row>
           <Row id="armyArea">{army}</Row>
         </Container>
-        <div className="d-grip gap-2">
+        <div className="d-grip gap-2 text-center">
           <Button
             variant="secondary"
             justify-content="center"
