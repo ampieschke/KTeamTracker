@@ -7,11 +7,10 @@ class Limited extends Component {
     return (
       <Container>
         <Row className="specialRule">
-          <Col xs="2"></Col>
-          <Col xs="3">Limited: </Col>
-          <Col xs="7">
+          <Col>Limited </Col>
+          <Row>
             <p>This weapon can only be used once per battle.</p>
-          </Col>
+          </Row>
         </Row>
       </Container>
     );

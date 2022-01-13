@@ -7,15 +7,14 @@ class Heavy extends Component {
     return (
       <Container>
         <Row className="specialRule">
-          <Col xs="2"></Col>
-          <Col xs="3">Heavy </Col>
-          <Col xs="7">
+          <Col>Heavy </Col>
+          <Row>
             <p>
               An operative cannot perfor a Charge, Fall Back, or Normal Move
               action in the same activation in which it perfoms a Shoot action
               with this ranged weapon.
             </p>
-          </Col>
+          </Row>
         </Row>
       </Container>
     );

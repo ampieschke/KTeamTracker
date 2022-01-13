@@ -39,11 +39,11 @@ class PhaseInfo extends Component {
     }
 
     return (
-      <div className="phaseOrder">
+      <div className="phaseOrder ">
         <Container>
           <Row>
             <Col lg="2" className="leftBox">
-              <div className="btnSection">
+              <div className="btnSection ">
                 <button
                   onClick={this.phaseUpdate}
                   className="phaseBtn button-53"

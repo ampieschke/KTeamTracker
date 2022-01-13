@@ -7,9 +7,8 @@ class Splashx extends Component {
     return (
       <Container>
         <Row className="specialRule">
-          <Col xs="2"></Col>
-          <Col xs="3">Splash x: </Col>
-          <Col xs="7">
+          <Col>Splash x </Col>
+          <Row>
             <p>
               Each time a friendly operative makes a shooting attack with this
               weapon, in the roll attack dice step, for each critical hit
@@ -17,7 +16,7 @@ class Splashx extends Component {
               operative visible to and within CIRCLE of it. x is the numner
               after the weapon's splash, e.g. Spalsh 1.
             </p>
-          </Col>
+          </Row>
         </Row>
       </Container>
     );

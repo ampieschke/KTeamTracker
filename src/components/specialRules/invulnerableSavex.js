@@ -7,9 +7,8 @@ class InvulnerableSave extends Component {
     return (
       <Container>
         <Row className="specialRule">
-          <Col xs="2"></Col>
-          <Col xs="3">Invulnerable Save x+ </Col>
-          <Col xs="7">
+          <Col>Invulnerable Save x+ </Col>
+          <Row>
             <p>
               Each time a shooting attack is made against an operative, the
               defender can use its invulnerable save instead of its normal Save
@@ -19,7 +18,7 @@ class InvulnerableSave extends Component {
               normal defence characteristic). x of the invulnerable save is the
               dice roll required for the defence dice to be sucessful, e.g. 4+.
             </p>
-          </Col>
+          </Row>
         </Row>
       </Container>
     );

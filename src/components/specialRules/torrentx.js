@@ -7,9 +7,8 @@ class Torrentx extends Component {
     return (
       <Container>
         <Row className="specialRule">
-          <Col xs="2"></Col>
-          <Col xs="3">Torrent x </Col>
-          <Col xs="7">
+          <Col>Torrent x </Col>
+          <Row>
             <p>
               Each time a friendly operative performs a shoot action or
               overwatch action and selects this weapon, after making the
@@ -18,7 +17,7 @@ class Torrentx extends Component {
               original target and each other. x is the distance after the
               weapon's Torrent, e.g. Torrent CIRCLE.
             </p>
-          </Col>
+          </Row>
         </Row>
       </Container>
     );

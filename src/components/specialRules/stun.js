@@ -7,9 +7,8 @@ class Stun extends Component {
     return (
       <Container>
         <Row className="specialRule">
-          <Col xs="2"></Col>
-          <Col xs="3">Stun: </Col>
-          <Col xs="7">
+          <Col>Stun: </Col>
+          <Row>
             <p>
               Each time a friendly operative makes a shooting attack with this
               weapon, in the roll attack dice step, if you retain any critical
@@ -27,7 +26,7 @@ class Stun extends Component {
                 </li>
               </ul>
             </p>
-          </Col>
+          </Row>
         </Row>
       </Container>
     );

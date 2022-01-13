@@ -7,15 +7,14 @@ class Rending extends Component {
     return (
       <Container>
         <Row className="specialRule">
-          <Col xs="2"></Col>
-          <Col xs="3">Rending: </Col>
-          <Col xs="7">
+          <Col>Rending </Col>
+          <Row>
             <p>
               Each time a friendly operative fights in combat or shoots with
               this weapon, in the roll attack dice step, if you retain any
               critical hits you can retain one normal hit as a critical hit.
             </p>
-          </Col>
+          </Row>
         </Row>
       </Container>
     );

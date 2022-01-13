@@ -7,9 +7,8 @@ class Px extends Component {
     return (
       <Container>
         <Row className="specialRule">
-          <Col xs="2"></Col>
-          <Col xs="3">Px: </Col>
-          <Col xs="7">
+          <Col>Px</Col>
+          <Row>
             <p>
               Piercing - Each time a friendly operative makes a shooting attack
               with this weapon, in the roll attack dice step of that shooting
@@ -17,7 +16,7 @@ class Px extends Component {
               special rule for that shooting attack. x is the number after the
               weapons P, e.g. P1.
             </p>
-          </Col>
+          </Row>
         </Row>
       </Container>
     );

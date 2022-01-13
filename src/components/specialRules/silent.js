@@ -7,11 +7,10 @@ class Silent extends Component {
     return (
       <Container>
         <Row className="specialRule">
-          <Col xs="2"></Col>
-          <Col xs="3">Silent: </Col>
-          <Col xs="7">
+          <Col>Silent: </Col>
+          <Row>
             <p>Can perform Shoot actions with a Conceal order.</p>
-          </Col>
+          </Row>
         </Row>
       </Container>
     );

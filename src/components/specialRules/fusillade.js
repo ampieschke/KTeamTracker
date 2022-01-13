@@ -7,9 +7,8 @@ class Fusillade extends Component {
     return (
       <Container>
         <Row className="specialRule">
-          <Col xs="2"></Col>
-          <Col xs="3">Fusillade </Col>
-          <Col xs="7">
+          <Col>Fusillade </Col>
+          <Row>
             <p>
               Each time a friendly operative performs a shoot action and selects
               this weapon, after selecting a vaild target, you canselect any
@@ -19,7 +18,7 @@ class Fusillade extends Component {
               profile) against each of the targets you have selected using the
               attack dice you have distributed to each of them.
             </p>
-          </Col>
+          </Row>
         </Row>
       </Container>
     );

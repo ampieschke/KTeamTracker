@@ -7,14 +7,13 @@ class Indirect extends Component {
     return (
       <Container>
         <Row className="specialRule">
-          <Col xs="2"></Col>
-          <Col xs="3">Indirect: </Col>
-          <Col xs="7">
+          <Col>Indirect</Col>
+          <Row>
             <p>
               Each time an attack is made with this weapon, in the select a
               valid target step, enemy operatives are not in cover.
             </p>
-          </Col>
+          </Row>
         </Row>
       </Container>
     );

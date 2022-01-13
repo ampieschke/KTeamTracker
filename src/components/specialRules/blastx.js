@@ -7,9 +7,8 @@ class BlastX extends Component {
     return (
       <Container>
         <Row className="specialRule">
-          <Col xs="2"></Col>
-          <Col xs="3">Blast X </Col>
-          <Col xs="7">
+          <Col>Blast X </Col>
+          <Row>
             <p>
               Each time a friendly operative performs a Shoot action and selects
               this weapon (or in the case of profiles, this weapons profile),
@@ -21,7 +20,7 @@ class BlastX extends Component {
               cannot make a shooting attack with this weapon by performing an
               Overwatch action.
             </p>
-          </Col>
+          </Row>
         </Row>
       </Container>
     );

@@ -7,15 +7,14 @@ class Brutal extends Component {
     return (
       <Container>
         <Row className="specialRule">
-          <Col xs="2"></Col>
-          <Col xs="3">Brutal </Col>
-          <Col xs="7">
+          <Col>Brutal </Col>
+          <Row>
             <p>
               Each time a friendly operative fights in combat with this weapon,
               in the resolve successful hits step of that combat, your opponent
               can only parry with critical hits.
             </p>
-          </Col>
+          </Row>
         </Row>
       </Container>
     );

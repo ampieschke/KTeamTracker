@@ -7,9 +7,8 @@ class Barrage extends Component {
     return (
       <Container>
         <Row className="specialRule">
-          <Col xs="2"></Col>
-          <Col xs="3">Barrage </Col>
-          <Col xs="7">
+          <Col>Barrage </Col>
+          <Row>
             <p>
               Each time a friendly operative makes a shooting attack with this
               weapon, for that shooting attack, the automatic retention of
@@ -18,7 +17,7 @@ class Barrage extends Component {
               feature from directly above, the defender can retain defence dice
               as if they were in cover.
             </p>
-          </Col>
+          </Row>
         </Row>
       </Container>
     );
