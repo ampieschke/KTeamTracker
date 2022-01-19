@@ -53,20 +53,23 @@ class GameFlow extends Component {
                 id="armylist"
               >
                 <Row>
-                  <i className="fas fa-trophy fa-2x"></i>
+                  <i class="fas fa-address-book fa-2x"></i>
                 </Row>
                 Army Lists
               </Button>
             </Col>
             <Col xs="4" className="footicon">
-              <button
+              <Button
                 onClick={this.displayUpdate}
                 className="footBtn"
-                value="/"
-                id="/"
+                value="scenario"
+                id="scenario"
               >
-                Scenario Generator
-              </button>
+                <Row>
+                  <i class="fab fa-battle-net fa-2x"></i>
+                </Row>
+                Scenario
+              </Button>
             </Col>
             {/* <Col>
               <span
