@@ -1,3 +1,13 @@
+/* CSS HEX
+--rifle-green: #414535ff;
+--sinopia: #cc3f0cff;
+--white: #fdfdffff;
+--silver: #c6c5b9ff;
+--steel-teal: #62929eff; */
+
+
+
+
 .leftBox {
   /* border-right: solid red 1px; */
   padding-right: 5px;
@@ -26,7 +36,7 @@ li {
 }
 
 .button-53 {
-  background-color: #3dd1e7;
+  background-color: #414535;
   border: 0 solid #e5e7eb;
   box-sizing: border-box;
   color: #000000;
@@ -175,7 +185,7 @@ li {
 .bottomPart {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  background-color: #292b2c;
+  background-color: #C6C5B9;
   bottom: 0;
   position: fixed;
   width: 100%;
@@ -186,4 +196,14 @@ li {
 
 .footicon {
   padding: 10px;
+  height: 80px;
+  width: 100px;
+}
+
+Button.footBtn{
+  width: 140px;
+  height: 60px;
+  background-color: #414535 !important;
+  border:none
+
 }
