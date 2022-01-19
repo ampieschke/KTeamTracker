@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import Stun from "../../specialRules/stun";
 
 class NemesisWardingStave extends Component {

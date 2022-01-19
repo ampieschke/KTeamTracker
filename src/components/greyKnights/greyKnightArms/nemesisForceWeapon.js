@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import LethalX from "../../specialRules/lethalX";
 
 class NemesisForceWeapon extends Component {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Container, Row, Col, Collapse } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Indirect from "../../specialRules/indirect";
 import Limited from "../../specialRules/limited";
 

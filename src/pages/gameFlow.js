@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import Scoreboard from "../components/scoreboard/scoreboard";
 import PhaseInfo from "../components/phaseInfo/phaseInfo";
 import ArmyList from "../components/armyList/armyList";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 class GameFlow extends Component {
   constructor(props) {
