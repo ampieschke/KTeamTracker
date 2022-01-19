@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 
 import Tau from "../armies/tau";
-
+import TauCards from "../tests/tauCards";
 class TauSelector extends Component {
   constructor(props) {
     super(props);
@@ -18,6 +18,8 @@ class TauSelector extends Component {
     let activeArea;
     if (this.state.activeChoice === "roster") {
       activeArea = <Tau />;
+    } else if (this.state.activeChoice === "rosterCards") {
+      activeArea = <TauCards />;
     }
     // else if (this.state.activeChoice === "strategicPloys") {
     //   activeArea = <GreyKnightGunner />;
@@ -58,6 +60,16 @@ class TauSelector extends Component {
                 id="greyKnightGunner"
               >
                 Tactical Ploys
+              </button>
+            </Col>
+            <Col xs="3">
+              <button
+                onClick={this.choiceUpdate}
+                className="button-54 tauButton"
+                value="rosterCards"
+                id="rosterCards"
+              >
+                Roster Beta
               </button>
             </Col>
           </Row>

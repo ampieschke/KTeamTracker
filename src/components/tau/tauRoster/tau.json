@@ -1,0 +1,23 @@
+[
+{
+    "id": 1,
+    "name":"Shas'Ui Pathfinder",
+    "m":3,
+    "apl":2,
+    "ga":1,
+    "df":3,
+    "sv":"5+",
+    "w":8
+},
+{
+    "id": 2,
+    "name":"Drone Control Pathfinder",
+    "m":3,
+    "apl":2,
+    "ga":1,
+    "df":3,
+    "sv":"5+",
+    "w":7
+}
+
+]
