@@ -5,6 +5,7 @@ import PhaseInfo from "../components/phaseInfo/phaseInfo";
 import ArmyList from "../components/armyList/armyList";
 import { Row, Col, Button } from "react-bootstrap";
 import Headline from "./kttrackerraw.png";
+import ScenarioSelector from "../components/scenarios/scenarioSelector";
 
 class GameFlow extends Component {
   constructor(props) {
@@ -24,6 +25,8 @@ class GameFlow extends Component {
       mainDisplay = <PhaseInfo />;
     } else if (this.state.currentDisplay === "armylist") {
       mainDisplay = <ArmyList />;
+    } else if (this.state.currentDisplay === "scenarios") {
+      mainDisplay = <ScenarioSelector />;
     }
     return (
       <div>
@@ -62,8 +65,8 @@ class GameFlow extends Component {
               <Button
                 onClick={this.displayUpdate}
                 className="footBtn"
-                value="scenario"
-                id="scenario"
+                value="scenarios"
+                id="scenarios"
               >
                 <Row>
                   <i class="fab fa-battle-net fa-2x"></i>

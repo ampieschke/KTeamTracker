@@ -109,7 +109,7 @@ class Tau extends Component {
                 value="commsPF"
                 id="commsPF"
               >
-                Communications Specialist Pathfinder
+                Comms Specialist Pathfinder
               </button>
               <button
                 onClick={this.rosterUpdate}

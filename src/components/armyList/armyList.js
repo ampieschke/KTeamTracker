@@ -5,7 +5,7 @@ import { Container, Col, Row, Button } from "react-bootstrap";
 // import GreyKnights from "../armies/greyKnights";
 import GreyKnightSelector from "../greyKnights/greyKnightsSelector";
 import TauSelector from "../tau/tauSelector";
-import VeteranGuardsmen from "../veteranGuardsmen/veteranGuardsmen";
+import VeteranGuardsmen from "../veteranGuardsmen/veteranGuardsmenSelector";
 
 class ArmyList extends Component {
   constructor(props) {

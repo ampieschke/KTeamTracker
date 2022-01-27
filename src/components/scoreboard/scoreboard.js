@@ -71,6 +71,7 @@ class Scoreboard extends Component {
           {/* Scoring */}
           <Row>
             <Col lg="3">
+              {/* <h3>Scenario!</h3> */}
               <TurnCounter />
             </Col>
             <Col lg="4">
