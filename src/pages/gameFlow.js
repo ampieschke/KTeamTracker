@@ -1,6 +1,7 @@
 import { withAuthenticationRequired } from "@auth0/auth0-react";
 import React, { Component } from "react";
 import Scoreboard from "../components/scoreboard/scoreboard";
+import TacOps from "../components/tacOps/tacOps";
 import PhaseInfo from "../components/phaseInfo/phaseInfo";
 import ArmyList from "../components/armyList/armyList";
 import { Row, Col, Button } from "react-bootstrap";
@@ -32,6 +33,7 @@ class GameFlow extends Component {
       <div>
         <img src={Headline} className="img-fluid" alt="Logo" />
         <Scoreboard />
+        <TacOps />
         {mainDisplay}
         <div className="bottomPart text-center">
           <Row>

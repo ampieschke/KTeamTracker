@@ -6,7 +6,7 @@ import TurnCounter from "../turnCounter/turnCounter";
 class Scoreboard extends Component {
   constructor(props) {
     super(props);
-    this.state = { teamOne: 0, teamTwo: 0, cpOne: 2, cpTwo: 2 };
+    this.state = { teamOne: 0, teamTwo: 0, cpOne: 0, cpTwo: 0 };
   }
 
   //Scoring//
@@ -77,30 +77,28 @@ class Scoreboard extends Component {
             <Col lg="4">
               <h2> Team One </h2>
               <Row className="secondPart">
-                <Col className="col-4">
+                <Col className="col-2">
                   <button className="btn" onClick={() => this.downTeamOne()}>
                     -
                   </button>
                 </Col>
-                <Col className="col-4">
+                <Col className="col-2">
                   <span className="score">{teamOne}</span>
                 </Col>
-                <Col className="col-4">
+                <Col className="col-2">
                   <button className="btn" onClick={() => this.upTeamOne()}>
                     +
                   </button>
                 </Col>
-              </Row>
-              <Row className="secondPart">
-                <Col className="col-4">
+                <Col className="col-2">
                   <button className="btn" onClick={() => this.downcpOne()}>
                     -
                   </button>
                 </Col>
-                <Col className="col-4">
+                <Col className="col-2">
                   <span className="score">{cpOne} CP</span>
                 </Col>
-                <Col className="col-4">
+                <Col className="col-2">
                   <button className="btn" onClick={() => this.upcpOne()}>
                     +
                   </button>
@@ -111,30 +109,28 @@ class Scoreboard extends Component {
             <Col lg="4">
               <h2> Team Two </h2>
               <Row>
-                <Col className="col-4">
+                <Col className="col-2">
                   <button className="btn" onClick={() => this.downTeamTwo()}>
                     -
                   </button>
                 </Col>
-                <Col className="col-4">
+                <Col className="col-2">
                   <span className="score">{teamTwo}</span>
                 </Col>
-                <Col className="col-4">
+                <Col className="col-2">
                   <button className="btn" onClick={() => this.upTeamTwo()}>
                     +
                   </button>
                 </Col>
-              </Row>
-              <Row>
-                <Col className="col-4">
+                <Col className="col-2">
                   <button className="btn" onClick={() => this.downcpTwo()}>
                     -
                   </button>
                 </Col>
-                <Col className="col-4">
+                <Col className="col-2">
                   <span className="score">{cpTwo} CP</span>
                 </Col>
-                <Col className="col-4">
+                <Col className="col-2">
                   <button className="btn" onClick={() => this.upcpTwo()}>
                     +
                   </button>

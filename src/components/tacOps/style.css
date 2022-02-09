@@ -1,0 +1,28 @@
+.scoreBoard{
+    text-align: center;
+    align-content: center;
+    margin-bottom: 15px;
+    border-bottom: black solid 5px;
+    
+}
+
+@media(max-width: 700) {
+    .scoreBoard{
+    display:none;
+}
+}
+
+
+.score{
+    font-size: 30px;
+    font-weight: 800;
+    
+}
+
+.secondPart{
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: #CC3F0C;
+}

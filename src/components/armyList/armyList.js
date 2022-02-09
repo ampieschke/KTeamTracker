@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
 import { Container, Col, Row, Button } from "react-bootstrap";
-// import Tau from "../armies/tau";
-// import GreyKnights from "../armies/greyKnights";
 import GreyKnightSelector from "../greyKnights/greyKnightsSelector";
 import TauSelector from "../tau/tauSelector";
 import VeteranGuardsmen from "../veteranGuardsmen/veteranGuardsmenSelector";

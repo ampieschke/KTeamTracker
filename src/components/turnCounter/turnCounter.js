@@ -24,22 +24,23 @@ class TurnCounter extends Component {
     let { turn } = this.state;
     return (
       <>
-        <Container className="counter">
-          <Col>
-            <h2 id="turn"> Turn: {turn}</h2>
-            <Row>
-              <Col className="Btn col-6">
-                <button className="button-53" onClick={() => this.backTurn()}>
-                  -
-                </button>
-              </Col>
-              <Col className="Btn col-6">
-                <button className="button-53" onClick={() => this.addTurn()}>
-                  +
-                </button>
-              </Col>
-            </Row>
-          </Col>
+        <Container className="counter ">
+          <Row className="justify-content-md-center">
+            <Col className="col-4 Btn">
+              <button className="button-53" onClick={() => this.backTurn()}>
+                -
+              </button>
+            </Col>
+            <Col className="col-4">
+              {" "}
+              <h2 id="turn"> Turn: {turn}</h2>
+            </Col>
+            <Col className="col-4 Btn">
+              <button className="button-53" onClick={() => this.addTurn()}>
+                +
+              </button>
+            </Col>
+          </Row>
         </Container>
       </>
     );
