@@ -33,7 +33,7 @@ class GameFlow extends Component {
       <div>
         <img src={Headline} className="img-fluid" alt="Logo" />
         <Scoreboard />
-        <TacOps />
+        {/* <TacOps /> */}
         {mainDisplay}
         <div className="bottomPart text-center">
           <Row>
@@ -76,20 +76,6 @@ class GameFlow extends Component {
                 Scenario
               </Button>
             </Col>
-            {/* <Col>
-              <span
-                onClick={this.displayUpdate}
-                className=""
-                value="phases"
-                id="phases"
-              >
-                hi
-                <i
-                  className="fas fa-trophy fa-2x"
-                  style={{ color: "white" }}
-                ></i>
-              </span>
-            </Col> */}
           </Row>
         </div>
       </div>

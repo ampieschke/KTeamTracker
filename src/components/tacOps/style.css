@@ -13,16 +13,6 @@
 }
 
 
-.score{
-    font-size: 30px;
-    font-weight: 800;
-    
-}
-
-.secondPart{
-    text-align: center;
-}
-
 .btn:hover{
     background-color: #CC3F0C;
 }

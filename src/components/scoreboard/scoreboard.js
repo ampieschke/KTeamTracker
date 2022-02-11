@@ -75,7 +75,7 @@ class Scoreboard extends Component {
               <TurnCounter />
             </Col>
             <Col lg="4">
-              <h2> Team One </h2>
+              <h2> Attacker </h2>
               <Row className="secondPart">
                 <Col className="col-2">
                   <button className="btn" onClick={() => this.downTeamOne()}>
@@ -107,7 +107,7 @@ class Scoreboard extends Component {
             </Col>
 
             <Col lg="4">
-              <h2> Team Two </h2>
+              <h2> Defender </h2>
               <Row>
                 <Col className="col-2">
                   <button className="btn" onClick={() => this.downTeamTwo()}>

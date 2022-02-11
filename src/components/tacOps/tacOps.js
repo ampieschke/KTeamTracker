@@ -30,7 +30,7 @@ class TacOps extends Component {
   render() {
     return (
       <>
-        <Container className="scoreBoard">
+        <Container className="">
           {/* Scoring */}
           <Row xs="3">
             <Button

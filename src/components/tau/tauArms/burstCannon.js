@@ -29,7 +29,7 @@ class BurstCannon extends Component {
 
     return (
       <Container>
-        <Col className="weapon">Pulse Carbine</Col>
+        <Col className="weapon">Burst Cannon</Col>
         <Row>
           <Col>A 6</Col>
           <Col>BS 4+</Col>

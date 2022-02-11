@@ -12,6 +12,9 @@ import CommsSpecialist from "../tau/tauRoster/communicationsSpecialist";
 import MedicalTechPF from "../tau/tauRoster/medicalTechPF";
 import WeaponsExpertPF from "../tau/tauRoster/weaponsExpertPF";
 import MarksmanPF from "../tau/tauRoster/marksmanPF";
+import MBThreeReconDrone from "../tau/tauDrones/mB3ReconDR";
+import MVFourDrone from "../tau/tauDrones/mV4Drone";
+import MVSevenDrone from "../tau/tauDrones/mv7MarkerDR";
 
 class Tau extends Component {
   constructor(props) {
@@ -46,6 +49,12 @@ class Tau extends Component {
       rosterArea = <WeaponsExpertPF />;
     } else if (this.state.activeOperative === "mmPF") {
       rosterArea = <MarksmanPF />;
+    } else if (this.state.activeOperative === "mb3") {
+      rosterArea = <MBThreeReconDrone />;
+    } else if (this.state.activeOperative === "mv4") {
+      rosterArea = <MVFourDrone />;
+    } else if (this.state.activeOperative === "mv7") {
+      rosterArea = <MVSevenDrone />;
     }
 
     return (
@@ -134,6 +143,31 @@ class Tau extends Component {
                 id="mmPF"
               >
                 Marksman Pathfinder
+              </button>
+              <h3>Drones</h3>
+              <button
+                onClick={this.rosterUpdate}
+                className="button-54 tauButton"
+                value="mb3"
+                id="mb3"
+              >
+                MB3 Recon Drone
+              </button>
+              <button
+                onClick={this.rosterUpdate}
+                className="button-54 tauButton"
+                value="mv4"
+                id="mv4"
+              >
+                MV4 Shield Drone
+              </button>
+              <button
+                onClick={this.rosterUpdate}
+                className="button-54 tauButton"
+                value="mv7"
+                id="mv7"
+              >
+                MV7 Marker Drone
               </button>
             </Col>
             <Col xs="9" className="rightBox">

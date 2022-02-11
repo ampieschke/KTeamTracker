@@ -3,6 +3,8 @@ import { Container, Col, Row } from "react-bootstrap";
 
 import Tau from "../armies/tau";
 import TauCards from "../tests/tauCards";
+import TauSPloys from "./tauSPloys/tauSPloys";
+import TauTPloys from "./tauTPloys/tauTPloys";
 class TauSelector extends Component {
   constructor(props) {
     super(props);
@@ -20,12 +22,11 @@ class TauSelector extends Component {
       activeArea = <Tau />;
     } else if (this.state.activeChoice === "rosterCards") {
       activeArea = <TauCards />;
+    } else if (this.state.activeChoice === "strategicPloys") {
+      activeArea = <TauSPloys />;
+    } else if (this.state.activeChoice === "tacticalPloys") {
+      activeArea = <TauTPloys />;
     }
-    // else if (this.state.activeChoice === "strategicPloys") {
-    //   activeArea = <GreyKnightGunner />;
-    // } else if (this.state.activeChoice === "tacticalPloys") {
-    //   activeArea = <GreyKnightJusticar />;
-    // }
 
     return (
       <Container>
@@ -46,8 +47,8 @@ class TauSelector extends Component {
               <button
                 onClick={this.choiceUpdate}
                 className="button-54 tauButton"
-                value="greyKnightWar"
-                id="greyKnightWar"
+                value="strategicPloys"
+                id="strategicPloys"
               >
                 Strategic Ploys
               </button>
@@ -56,8 +57,8 @@ class TauSelector extends Component {
               <button
                 onClick={this.choiceUpdate}
                 className="button-54 tauButton"
-                value="greyKnightGunner"
-                id="greyKnightGunner"
+                value="tacticalPloys"
+                id="tacticalPloys"
               >
                 Tactical Ploys
               </button>
