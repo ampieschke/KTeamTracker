@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import VeteranGuardsmen from "../armies/veteranGuardsmen";
+import AncillarySupport from "./ancillarySupport/ancillarySupport";
 import GuardsmenSPloys from "./guardsmenSPloys/guardsmenSPloys";
 import GuardsmenTPloys from "./guardsmenTPloys/guardsmenTPloys";
 
@@ -23,6 +24,8 @@ class VeteranGuardsmenSelector extends Component {
       activeArea = <GuardsmenSPloys />;
     } else if (this.state.activeChoice === "tacticalPloys") {
       activeArea = <GuardsmenTPloys />;
+    } else if (this.state.activeChoice === "ancillary") {
+      activeArea = <AncillarySupport />;
     }
 
     return (
@@ -58,6 +61,16 @@ class VeteranGuardsmenSelector extends Component {
                 id="tacticalPloys"
               >
                 Tactical Ploys
+              </button>
+            </Col>
+            <Col xs="3">
+              <button
+                onClick={this.choiceUpdate}
+                className="button-54 vGButton"
+                value="ancillary"
+                id="ancillary"
+              >
+                Ancillary Support
               </button>
             </Col>
           </Row>
